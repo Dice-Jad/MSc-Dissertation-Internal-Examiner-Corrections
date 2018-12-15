@@ -1,0 +1,159 @@
+%--------------------------------------------------------------------------------------
+%      Language Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[english]{babel}
+
+%--------------------------------------------------------------------------------------
+%      PDF Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor} %Must be loaded first to avoid clashes
+
+\RequirePackage{ifpdf}	% Allows automatic setting of a few pdf-related options
+
+\ifpdf %Begin if PDF statement
+	\RequirePackage[pdftex]{graphicx}
+\else %If not PDF
+	\RequirePackage{graphicx}
+	\RequirePackage{hypdvips}	%Allows hyperref to compile properly in PS; comment out for compiling directly to PDF
+\fi %End of if
+
+\RequirePackage[colorlinks,
+allcolors=RoyalBlue,
+pdfborder={0 0 0},
+pageanchor=true,
+hyperindex=true,
+breaklinks=true,
+pagebackref=false,
+linktocpage=true,
+pdfhighlight=/P]{hyperref}	%Automatically hyperlinks sections, citations, etc. and allows manual insertion of hyperlinks
+
+\RequirePackage{pdfpages} % Allows inclusions of pages from external PDF documents
+\RequirePackage{import} % Helps importing files in common directories
+
+\RequirePackage{epstopdf}
+
+%--------------------------------------------------------------------------------------
+%      Text format and environment Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage[none]{hyphenat} % Prevents hyphenation
+\RequirePackage{lipsum} % Used to generate dummy text
+\RequirePackage[sharp]{easylist}% Custom list environments, items distinguished by #
+\RequirePackage{titlesec} % Allows for title formatting
+\RequirePackage{enumitem} % Adds various enumerate list options
+\RequirePackage[bottom]{footmisc} % Forces footnotes to bottom of the pages
+\RequirePackage{microtype}
+\RequirePackage{moresize} % Allows for more flexible font sizes
+\RequirePackage{ragged2e}
+%--------------------------------------------------------------------------------------
+%      Table Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage{float} % Allow floating images/tables
+\RequirePackage{multirow} % Allows specifcation of multirow entires in tabular environments
+\RequirePackage{tabulary}
+\RequirePackage{array} % allows the use of m for vertically aligned table text
+\RequirePackage{booktabs} % Required by Excel2Latex
+\RequirePackage{multicol} % Required by Excel2Latex
+\RequirePackage{multirow} % Required by Excel2Latex
+\RequirePackage{bigstrut} % Required for table formatting
+\RequirePackage{rotating} % Allows vertical text in tabular areas (amongst others)
+\RequirePackage[flushleft]{threeparttable} % Allows for well formatted footnotes
+\RequirePackage{makecell} % Allows for line breaks in a table cell
+\RequirePackage{tabto} % Allows for tabs to be created
+\RequirePackage{longtable} % Allows table to span multiple pages
+\RequirePackage{tabu}
+
+%--------------------------------------------------------------------------------------
+%      Figure Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage{epsfig}	%Allows insertion of certain graphics
+\RequirePackage{placeins} %Controls float placement
+\RequirePackage{wrapfig} %Allows the insertion of figures in text with the text reflowed around them
+\RequirePackage{subcaption} %Allows placing images side by side with an overall and sub caption
+\RequirePackage[labelfont=bf]{caption}
+
+%--------------------------------------------------------------------------------------
+%      Symbols & Font Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage[centertags]{amsmath} % Allows insertion of MANY maths symbols
+\RequirePackage{amsthm,amsfonts,amssymb} % Allows insertion of MANY maths symbols
+\RequirePackage{bm}
+\RequirePackage[english,iso]{isodate} % Allows automatic insertion of formatted date strings
+\RequirePackage{newlfont,bezier} % Additional fonts
+\RequirePackage{textcomp} % Fonts with additional symbols
+\RequirePackage{csquotes}
+\RequirePackage{marvosym} % Allows insertion of engineering symbols
+
+%--------------------------------------------------------------------------------------
+%      Page format and environment Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage{pdflscape} % Creates landscape pages
+\RequirePackage{geometry} % Allows for setting up of the margins
+
+%--------------------------------------------------------------------------------------
+%      Additonal Packages
+%--------------------------------------------------------------------------------------
+\RequirePackage{etoolbox} % Additional latex commands http://ctan.mirror.ac.za/macros/latex/contrib/etoolbox/etoolbox.pdf
+\RequirePackage{xifthen} % Allows the use of command branching functions
+
+%--------------------------------------------------------------------------------------
+%      Table of Contents
+%--------------------------------------------------------------------------------------
+\RequirePackage[acronym,toc,nonumberlist]{glossaries}
+
+%--------------------------------------------------------------------------------------
+%      Custom Environments
+%--------------------------------------------------------------------------------------
+\RequirePackage[framemethod=tikz]{mdframed}
+%% Setting up the frame style for mdframed
+% \mdfsetup{skipabove=\topskip,skipbelow=\topskip}
+% \newcounter{rawidea}[section]
+% \newenvironment{rawidea}[1][]{%
+% \stepcounter{rawidea}%
+% \ifstrempty{#1}%
+% {\mdfsetup{% If no label has been entered
+% frametitle={%
+% \tikz[baseline=(current bounding box.east),outer sep=0pt]
+% \node[anchor=east,rectangle,fill=red!80]
+% {\strut Raw Idea~\therawidea};}}
+% }%
+% {\mdfsetup{% If a label has been entered
+% frametitle={% 
+% \tikz[baseline=(current bounding box.east),outer sep=0pt]
+% \node[anchor=east,rectangle,fill=red!80]
+% {\strut Raw Idea~\therawidea:~#1};}}%
+% }%
+% \mdfsetup{innertopmargin=10pt,linecolor=red!80,%
+% linewidth=2pt,topline=true,
+% frametitleaboveskip=\dimexpr-\ht\strutbox\relax,}
+% \begin{mdframed}[]\relax%
+% }{\end{mdframed}}
+
+\RequirePackage{changepage}
+\newenvironment{rawidea}
+{% beginning of environment
+\begin{adjustwidth}{5em}{5em}
+\color{RedOrange}
+\begin{center}
+\rule{5cm}{3pt}
+\end{center}
+}
+{% end of environment
+\begin{center}
+\rule{5cm}{1pt}
+\end{center}
+\end{adjustwidth}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1637 @@
+%----------------------------------------------
+%      CHAPTER
+%----------------------------------------------
+\chapter{Additional CV Matrices}\label{appendix:complete-cv-matrix}
+
+Additional variations of the \gls{cv} matrices for each of the baseline vehicles are included in this Appendix for the interest of the reader. The complete \gls{cv} matrices in Sections~\ref{section:complete-cv-quad-semi}~to~\ref{section:complete-cv-rigid-drawbar} include all evaluated \gls{vdp} including those that had a negligible relative influence. Following these in Sections~\ref{section:cv-geometrical}~to~\ref{section:cv-tyre} are \gls{cv} matrices including the inertial, geometric, suspension and tyre parameters in isolation.
+
+%----------------------------------------------
+%      SECTION
+%----------------------------------------------
+\section{Complete CV Matrix - Quad Semi-trailer}\label{section:complete-cv-quad-semi}
+
+%----------------------------------------------
+% LONG TABLE
+
+\stdlongtable{
+% Caption
+Complete CV matrix - quad semi-trailer
+}{
+% Label
+\label{table:complete-cv-quad-semi-trailer}
+}{
+% Column specification
+|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|
+}{
+% Headings
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways}\bigstrut
+}{
+% Width
+\textwidth
+}{
+% portrait/landscape
+portrait
+}{
+% fontspec
+\scriptsize
+}{
+% Contents
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM wheelbase}} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{63}} & 0 & 0 & 3 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textbf{14} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{62}} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & 4 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{63}} & \textbf{16} & \textbf{19} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL wheelbase}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & \textbf{18} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{70}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{80}} & 8 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{44}} & 9 & 5 & 1 & 2 \\
+    \hline
+    \textbf{PM axle spacing} & 0 & 0 & 0 & 0 & 1 & 0 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 0 & \textbf{14} \\
+    \hline
+    \textbf{TL axle spacing} & 0 & 0 & 0 & 0 & 1 & 1 & 0 & \textbf{12} & 0 & 9 & 3 & 5 & 4 & 2 & 8 \\
+    \hline
+    PM hitch height & 0 & 0 & 0 & 0 & 4 & 0 & 2 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM hitch long. loc.}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & 0 & 0 & 1 & 9 & \textbf{12} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & 0 & 1 & 0 & 3 & 1 & 1 & \textbf{24} \\
+    \hline
+    \textbf{PM sprung mass} & \textbf{13} & 2 & 6 & 5 & 1 & 1 & 5 & 1 & 1 & 0 & 0 & 1 & 0 & 0 & \textbf{15} \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL sprung mass}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{48}} & 0 & \textbf{22} & \textbf{20} & 9 & 8 & \textbf{14} & 5 & 5 & 0 & 0 & 0 & 1 & 0 & 5 \\
+    \hline
+    \textbf{PM \gls{cgx}} & 0 & \textbf{10} & 0 & 0 & 0 & 0 & 5 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 7 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL \gls{cgx}}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{49}} & 0 & 0 & \textbf{12} & 6 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{55}} & 8 & 2 & 1 & 0 & 2 & 1 & 1 & 2 \\
+    \hline
+    PM \gls{cgy} & 0 & 0 & 0 & 0 & 5 & 5 & 4 & 3 & 5 & 1 & 2 & 1 & 2 & 1 & 1 \\
+    \hline
+    \textbf{TL \gls{cgy}} & 0 & 0 & 0 & 0 & \textbf{14} & 1 & 0 & 0 & \textbf{11} & 0 & 3 & 0 & 4 & 2 & 0 \\
+    \hline
+    PM \gls{cgz} & 0 & 0 & 0 & 0 & 4 & 1 & 5 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL \gls{cgz}} & 0 & 0 & 0 & 0 & \textbf{22} & 1 & \textbf{22} & 3 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    TL \gls{ixx} & 0 & 0 & 0 & 0 & 1 & 1 & 2 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 1 & 1 & 4 & 8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 1 & \textbf{19} & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{38}} & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{88}} & 3 & \textbf{11} & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{76}} & 4 & 0 & \textbf{23} & 3 & 4 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{77}} & \textbf{15} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & \textbf{22} & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & 0 & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 6 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload mass}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{56}} & 7 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{48}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{82}} & \textbf{20} & \textbf{21} & 2 & 2 & 3 & 4 & 3 & \textbf{22} \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL payload \gls{cgx}}} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{57}} & 0 & 0 & \textbf{12} & 7 & \textbf{23} & 7 & 2 & 1 & 0 & 2 & 1 & 1 & 2 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{44}} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & 0 & 8 & 1 & \textbf{11} & 6 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 7 & 7 & \textbf{20} & \textbf{14} & 0 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL payload \gls{ixx} & 0 & 0 & 0 & 0 & 2 & 1 & 2 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{58}} & \textbf{18} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 2 & 0 & 1 & 1 & 1 & 0 & 1 \\
+    \hline
+    St. unsprung mass & 2 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 2 \\
+    \hline
+    Dr. unsprung mass & 4 & 6 & 2 & 2 & 0 & 0 & 2 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    Tl. unsprung mass & 6 & 5 & 3 & 2 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{St. axle track}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{79}} & 0 & 1 & 3 \\
+    \hline
+    Dr. axle track & 0 & 0 & 0 & 0 & 2 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Tl. axle track} & 0 & 0 & 0 & 0 & \textbf{16} & 1 & 2 & 1 & 5 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. axle centre height & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. axle centre height & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. roll centre height & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Dr. roll centre height} & 0 & 0 & 0 & 0 & 8 & 3 & \textbf{13} & 9 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
+    \hline
+    Tl. roll centre height & 0 & 0 & 0 & 0 & 2 & 1 & 3 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. roll steer coef. & 0 & 0 & 0 & 0 & 1 & 7 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Dr. roll steer coef.} & 0 & 0 & 0 & 0 & 2 & \textbf{11} & 0 & 7 & 3 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    \textbf{Tl. roll steer coef.} & 0 & 0 & 0 & 0 & 0 & 2 & 7 & \textbf{17} & \textbf{10} & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+    \hline
+    Dr. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+    \hline
+    Tl. wheel centre height & 0 & 0 & 0 & 0 & 2 & 1 & 1 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. aux. roll stiffness & 0 & 0 & 0 & 0 & 4 & 1 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Dr. aux. roll stiffness} & 0 & 0 & 0 & 0 & \textbf{19} & 2 & \textbf{10} & 3 & 3 & 0 & 0 & 1 & 0 & 0 & 1 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. aux. roll stiffness}} & 0 & 0 & 0 & 0 & 7 & \textbf{11} & \textbf{11} & 9 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & 0 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. damper & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    Dr. damper & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. damper & 0 & 0 & 0 & 0 & 1 & 0 & 2 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. jounce / rebound & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. jounce / rebound & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spring & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+    \hline
+    Dr. spring & 0 & 0 & 0 & 0 & 2 & 1 & 3 & 3 & 0 & 1 & 0 & 3 & 1 & 1 & 5 \\
+    \hline
+    Tl. spring & 0 & 0 & 0 & 0 & 2 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    St. spring track & 0 & 0 & 0 & 0 & 2 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. spring track & 0 & 0 & 0 & 0 & 2 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. spring track & 0 & 0 & 0 & 0 & 1 & 1 & 2 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. dual spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. eff. rolling radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Dr. eff. rolling radius} & \textbf{15} & 0 & 1 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. eff. rolling radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. $L$ for $F_y$ \& $M_z$ & 0 & 0 & 0 & 0 & 4 & 2 & 9 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Tl. $L$ for $F_y$ \& $M_z$} & 0 & 0 & 0 & 0 & 2 & 4 & \textbf{14} & \textbf{14} & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{St. cornering stiffness}} & 0 & 0 & 0 & 0 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{65}} & 2 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 7 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. cornering stiffness}} & 0 & 0 & 0 & 0 & 2 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{49}} & 6 & 1 & 0 & 3 & 2 & 1 & \textbf{21} \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. cornering stiffness}} & 0 & 0 & 0 & 0 & 1 & \textbf{10} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{81}} & \textbf{23} & 1 & 0 & 2 & 2 & 1 & 3 \\
+    \hline
+    St. spring rate & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 2 & 2 & 0 & 0 & 2 & 0 & 0 & 1 \\
+    \hline
+    Dr. spring rate & 0 & 0 & 0 & 0 & 4 & 1 & 4 & 4 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
+    \hline
+    Tl. spring rate & 0 & 0 & 0 & 0 & 2 & 2 & 7 & 2 & 4 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. unloaded radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. unloaded radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. unloaded radius & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+}{16}
+
+
+% LONG TABLE
+%----------------------------------------------
+
+%==============================================
+%      SECTION
+%==============================================
+\newpage\section{Complete CV Matrix - Tridem Interlink}\label{section:complete-cv-tridem-interlink}
+
+%----------------------------------------------
+% LONG TABLE
+
+\stdlongtable{
+% Caption
+Complete CV matrix - tridem interlink
+}{
+% Label
+\label{table:complete-cv-tridem-interlink}
+}{
+% Column specification
+|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|
+}{
+% Headings
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways}
+}{
+% Width
+\textwidth
+}{
+% portrait/landscape
+portrait
+}{
+% fontspec
+\scriptsize
+}{
+% Contents
+\hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM wheelbase}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & 0 & 0 & 3 & \textbf{16} & \textbf{20} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{62}} & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & \textbf{21} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{62}} & \textbf{24} & 4 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 wheelbase}} & 0 & \textbf{11} & 0 & 0 & 4 & 8 & 7 & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & 5 & 1 & 5 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 wheelbase}} & 0 & 8 & 0 & 0 & \textbf{11} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{19} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 4 & 8 & 0 & 4 \\
+    \hline
+    \textbf{PM axle spacing} & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 2 & 1 & 0 & \textbf{13} \\
+    \hline
+    TL 1 axle spacing & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 4 & 2 & 5 & 8 & 1 & 8 \\
+    \hline
+    \textbf{TL 2 axle spacing} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \textbf{10} & 0 & 3 & \textbf{10} & 1 & 4 & 0 & 1 \\
+    \hline
+    PM hitch height & 0 & 0 & 0 & 0 & 8 & 2 & 3 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    TL 1 hitch height & 0 & 0 & 0 & 0 & 5 & 0 & 7 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM hitch long. loc.}} & 0 & \textbf{21} & 0 & 0 & 1 & \textbf{12} & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 1 & 1 & 1 & 3 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} \\
+    \hline
+    \textbf{TL 1 hitch long. loc.} & 0 & 6 & 0 & 0 & 2 & 1 & 7 & \textbf{16} & 4 & 6 & 6 & 0 & 1 & 0 & 1 \\
+    \hline
+    \textbf{PM sprung mass} & 5 & 1 & 9 & 8 & 2 & 3 & 1 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & \textbf{19} \\
+    \hline
+    \textbf{TL 1 sprung mass} & 6 & 5 & \textbf{12} & \textbf{10} & 2 & 1 & 0 & 4 & 2 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    \textbf{TL 2 sprung mass} & 6 & 6 & \textbf{11} & \textbf{10} & 6 & 9 & 7 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{cgx} & 0 & 5 & 0 & 0 & 0 & 2 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 6 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 \gls{cgx}}} & 0 & \textbf{10} & 0 & 0 & 4 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{39}} & 3 & 0 & 0 & 0 & 1 & 1 & 0 & 1 \\
+    \hline
+    TL 2 \gls{cgx} & 0 & 2 & 0 & 0 & 7 & 6 & 4 & 4 & 0 & 1 & 0 & 1 & 1 & 0 & 0 \\
+    \hline
+    \textbf{PM \gls{cgy}} & 0 & 0 & 0 & 0 & 7 & 3 & 6 & 2 & 4 & 1 & \textbf{10} & 1 & 2 & 0 & 1 \\
+    \hline
+    \textbf{TL 1 \gls{cgy}} & 0 & 0 & 0 & 0 & \textbf{11} & 1 & 7 & 1 & 3 & 1 & 6 & 0 & 2 & 0 & 0 \\
+    \hline
+    \textbf{TL 2 \gls{cgy}} & 0 & 0 & 0 & 0 & \textbf{17} & 0 & 8 & 2 & 5 & 0 & 9 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{cgz} & 0 & 0 & 0 & 0 & 4 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL 1 \gls{cgz}} & 0 & 0 & 0 & 0 & \textbf{11} & 0 & 3 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL 2 \gls{cgz}} & 0 & 0 & 0 & 0 & \textbf{19} & 1 & \textbf{10} & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{PM \gls{ixx}} & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{14} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL 1 \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL 2 \gls{ixx} & 0 & 0 & 0 & 0 & 1 & 0 & 3 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL 1 \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 3 & 3 & 7 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL 2 \gls{iyy}/\gls{izz}} & 0 & 0 & 0 & 0 & 0 & \textbf{14} & 7 & \textbf{15} & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{89}} & 6 & 1 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 1 front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 \\
+    \hline
+    TL 2 front overhang & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL 1 rear overhang & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 2 rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{54}} & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & 6 & 0 & \textbf{24} & 4 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 1 reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{95}} & 0 & 0 & 0 & 3 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & \textbf{22} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & 4 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{38}} & 3 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 1 payload mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{47}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textbf{15} & \textbf{11} & 2 & 4 & 5 & 1 & \textbf{20} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 payload mass}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{67}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{13} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textbf{20} & 6 & 2 & 1 & 1 & 0 & 1 \\
+    \hline
+    \textbf{TL 1 payload \gls{cgx}} & 0 & \textbf{18} & 0 & 0 & 9 & 0 & \textbf{12} & 6 & 1 & 0 & 0 & 1 & 1 & 0 & 1 \\
+    \hline
+    \textbf{TL 2 payload \gls{cgx}} & 0 & 3 & 0 & 0 & \textbf{11} & \textbf{11} & \textbf{13} & 9 & 0 & 1 & 0 & 1 & 2 & 0 & 1 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 1 payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{75}} & 1 & 8 & 4 & \textbf{16} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & 1 & 9 & 1 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 2 payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{94}} & 0 & \textbf{24} & \textbf{12} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & 0 & 2 & 1 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 1 payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{75}} & 7 & \textbf{13} & 9 & 2 & 0 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 2 payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{95}} & 6 & 9 & \textbf{15} & 9 & 0 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL 1 payload \gls{ixx}} & 0 & 0 & 0 & 0 & 1 & 0 & \textbf{14} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL 2 payload \gls{ixx}} & 0 & 0 & 0 & 0 & 1 & 1 & \textbf{14} & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL 1 payload \gls{iyy}/\gls{izz}} & 0 & 0 & 0 & 0 & 0 & 8 & 8 & \textbf{22} & 1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 2 payload \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & \textbf{17} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{49}} & 1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. unsprung mass & 0 & 0 & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 \\
+    \hline
+    Dr. unsprung mass & 2 & 4 & 3 & 3 & 0 & 1 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    \textbf{Tl. unsprung mass} & 5 & 4 & 8 & 7 & \textbf{16} & 1 & 1 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{St. axle track}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & \textbf{17} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{79}} & 0 & 0 & 3 \\
+    \hline
+    Dr. axle track & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. axle track}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{44}} & 1 & 4 & 4 & 4 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. axle centre height & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. roll centre height & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. roll centre height}} & 0 & 0 & 0 & 0 & \textbf{12} & 0 & 2 & 6 & 1 & 1 & 0 & 1 & 1 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} \\
+    \hline
+    Tl. roll centre height & 0 & 0 & 0 & 0 & 8 & 3 & 6 & 2 & 3 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. roll steer coef. & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. roll steer coef. & 0 & 0 & 0 & 0 & 2 & 6 & 4 & 3 & 2 & 0 & 0 & 0 & 1 & 0 & 1 \\
+    \hline
+    \textbf{Tl. roll steer coef.} & 0 & 0 & 0 & 0 & 0 & 4 & 1 & \textbf{21} & \textbf{18} & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Dr. spin inertia} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & \textbf{22} \\
+    \hline
+    Tl. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+    \hline
+    Dr. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+    \hline
+    Tl. wheel centre height & 0 & 0 & 0 & 0 & 4 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. aux. roll stiffness & 0 & 0 & 0 & 0 & 3 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 2 & 8 & 1 & 2 & 0 & 1 & 1 & 0 & 0 & 1 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{47}} & \textbf{17} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{14} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{99}} & 0 & 9 & 0 & 1 & 0 & 0 \\
+    \hline
+    St. damper & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    Dr. damper & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. damper & 0 & 0 & 0 & 0 & 1 & 0 & 4 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spring & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+    \hline
+    Dr. spring & 0 & 0 & 0 & 0 & 3 & 0 & 2 & 0 & 0 & 0 & 0 & 3 & 1 & 0 & 5 \\
+    \hline
+    Tl. spring & 0 & 0 & 0 & 0 & 7 & 1 & 8 & 1 & 1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    St. spring track & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. spring track & 0 & 0 & 0 & 0 & 2 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. spring track & 0 & 0 & 0 & 0 & 2 & 0 & 7 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. dual spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. dual spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. eff. rolling radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. eff. rolling radius & 7 & 0 & 1 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. eff. rolling radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. $L$ for $F_y$ \& $M_z$ & 0 & 0 & 0 & 0 & 1 & 3 & 6 & 9 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{Tl. $L$ for $F_y$ \& $M_z$} & 0 & 0 & 0 & 0 & 2 & 7 & \textbf{11} & \textbf{21} & 2 & 0 & 2 & 0 & 1 & 0 & 0 \\
+    \hline
+    \textbf{St. cornering stiffness} & 0 & 0 & 0 & 0 & 0 & \textbf{19} & 3 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 6 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. cornering stiffness}} & 0 & 0 & 0 & 0 & 0 & 5 & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} & 3 & 2 & 0 & 3 & 2 & 0 & \textbf{19} \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. cornering stiffness}} & 0 & 0 & 0 & 0 & 1 & \textbf{13} & 6 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{94}} & \textbf{22} & 1 & 3 & 2 & 3 & 0 & 3 \\
+    \hline
+    St. spring rate & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 2 & 0 & 0 & 1 \\
+    \hline
+    Dr. spring rate & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    \textbf{Tl. spring rate} & 0 & 0 & 0 & 0 & \textbf{13} & 6 & \textbf{22} & 2 & 3 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. unloaded radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. unloaded radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. unloaded radius & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+
+}{16}
+
+% LONG TABLE
+%----------------------------------------------
+
+%==============================================
+%      SECTION
+%==============================================
+\newpage\section{Complete CV Matrix - Rigid Drawbar Combination}\label{section:complete-cv-rigid-drawbar}
+
+%----------------------------------------------
+% LONG TABLE
+
+\stdlongtable{
+% Caption
+Complete CV matrix - rigid combination
+}{
+% Label
+\label{table:complete-cv-rigid-combination}
+}{
+% Column specification
+|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|
+}{
+% Headings
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{SRTtrrcu~~~~}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways}
+}{
+% Width
+\textwidth
+}{
+% portrait/landscape
+portrait
+}{
+% fontspec
+\scriptsize
+}{
+% Contents
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM wheelbase}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & 0 & 0 & 8 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & \textbf{21} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textbf{10} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{49}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{70}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{54}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{DL wheelbase}} & 0 & 0 & 0 & 0 & 1 & 0 & 2 & 4 & 3 & 3 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 0 & 5 & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL wheelbase}} & 0 & 0 & 0 & 0 & \textbf{17} & \textbf{12} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{44}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{55}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & \textbf{17} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{63}} & 4 & 4 \\
+\hline
+PM axle spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 0 & 2 \\
+\hline
+DL axle spacing & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 2 & 0 & 5 & 0 & 7 & 2 \\
+\hline
+TL axle spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 5 & 0 & 4 & 0 & 1 & 1 \\
+\hline
+\textbf{PM hitch height} & 0 & 0 & 0 & 0 & 1 & 0 & 2 & \textbf{14} & \textbf{14} & 1 & 0 & 0 & 1 & 4 \\
+\hline
+DL hitch height & 0 & 0 & 0 & 0 & 5 & 2 & 2 & 1 & 2 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+\textbf{PM hitch long. loc.} & 0 & 0 & 0 & 0 & 0 & 0 & 3 & \textbf{15} & \textbf{19} & 3 & \textbf{11} & 4 & 0 & 3 \\
+\hline
+\textbf{DL hitch long. loc.} & 0 & 0 & 0 & 0 & 3 & 2 & \textbf{18} & 6 & 4 & 2 & 3 & 1 & 1 & 4 \\
+\hline
+\textbf{PM sprung mass} & 3 & 1 & 6 & 4 & 0 & 0 & 3 & 1 & 1 & 0 & 1 & 1 & 1 & \textbf{18} \\
+\hline
+DL sprung mass & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+TL sprung mass & 2 & 2 & 3 & 2 & 3 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 \\
+\hline
+PM \gls{cgx} & 0 & 6 & 0 & 0 & 0 & 0 & 2 & 1 & 0 & 0 & 2 & 1 & 1 & 9 \\
+\hline
+DL \gls{cgx} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\hline
+TL \gls{cgx} & 0 & 0 & 0 & 0 & 6 & 3 & 1 & 4 & 1 & 0 & 0 & 0 & 0 & 1 \\
+\hline
+\textbf{PM \gls{cgy}} & 0 & 0 & 0 & 0 & \textbf{14} & 0 & 3 & 0 & 2 & 2 & 1 & 7 & 2 & 6 \\
+\hline
+DL \gls{cgy} & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+TL \gls{cgy} & 0 & 0 & 0 & 0 & 8 & 3 & 0 & 1 & 1 & 3 & 0 & 0 & 0 & 0 \\
+\hline
+PM \gls{cgz} & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+DL \gls{cgz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+TL \gls{cgz} & 0 & 0 & 0 & 0 & 9 & 4 & 1 & 2 & 1 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+PM \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 3 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+DL \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+TL \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+PM \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 2 & 3 & 0 & 0 & 1 & 0 & 1 \\
+\hline
+DL \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+TL \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 3 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \textbf{18} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 \\
+\hline
+TL front overhang & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{91}} & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{11} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{63}} & 4 & 9 & \textbf{23} & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{66}} & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & \textbf{13} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{49}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{85}} & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM payload mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & 0 & 0 & \textbf{19} & \textbf{17} & 9 & 8 & \textbf{16} & 4 & \textbf{17} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload mass}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{67}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{18} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{79}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{65}} & \textbf{14} & 7 & 0 & 5 & 5 \\
+\hline
+\textbf{PM payload \gls{cgx}} & 0 & \textbf{12} & 0 & 0 & 3 & 0 & 7 & 3 & 1 & 3 & 3 & 1 & 2 & \textbf{22} \\
+\hline
+\textbf{TL payload \gls{cgx}} & 0 & 0 & 0 & 0 & \textbf{18} & 9 & 4 & 2 & 4 & 1 & 1 & 0 & 2 & 2 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & 0 & 4 & 1 & 4 & 4 & 1 & \textbf{14} & 4 & \textbf{10} \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{85}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & 2 & 5 & 9 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{39}} & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & 0 & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & 7 & 0 & 1 & 1 & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{82}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} & \textbf{23} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & \textbf{16} & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM payload \gls{ixx}}} & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{21} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{38}} & \textbf{15} & 0 & 0 & 0 & 0 \\
+\hline
+TL payload \gls{ixx} & 0 & 0 & 0 & 0 & 1 & 0 & 6 & 6 & 4 & 2 & 0 & 0 & 0 & 0 \\
+\hline
+PM payload \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 4 & 6 & 0 & 0 & 1 & 0 & 0 \\
+\hline
+\textbf{TL payload \gls{iyy}/\gls{izz}} & 0 & 0 & 0 & 0 & 1 & 0 & \textbf{13} & 8 & \textbf{19} & 3 & 0 & 0 & 0 & 0 \\
+\hline
+St. unsprung mass & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 1 & 2 \\
+\hline
+Dr. unsprung mass & 1 & 3 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 2 \\
+\hline
+\textbf{Tl. unsprung mass} & 3 & 3 & 5 & 4 & \textbf{10} & 5 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{St. axle track}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{70}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} \\
+\hline
+Dr. axle track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. axle track}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textbf{17} & 2 & 2 & 3 & 5 & 0 & 0 & 0 & 0 \\
+\hline
+St. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. axle centre height & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. roll centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textbf{Dr. roll centre height} & 0 & 0 & 0 & 0 & 4 & 0 & 5 & \textbf{11} & 7 & 0 & 1 & 1 & 1 & 1 \\
+\hline
+Tl. roll centre height & 0 & 0 & 0 & 0 & 7 & 3 & 3 & 1 & 3 & 2 & 0 & 0 & 0 & 0 \\
+\hline
+\textbf{St. roll steer coef.} & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{10} & 0 & 0 & 0 & 0 & 0 & 0 & 2 \\
+\hline
+\textbf{Dr. roll steer coef.} & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 8 & \textbf{21} & \textbf{12} & 0 & 2 & 1 & 1 \\
+\hline
+\textbf{Tl. roll steer coef.} & 0 & 0 & 0 & 0 & 0 & 1 & 3 & 0 & \textbf{15} & 6 & 0 & 0 & 0 & 0 \\
+\hline
+St. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textbf{Tl. spin inertia} & 0 & 0 & 0 & 0 & 5 & \textbf{13} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+\hline
+Dr. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \\
+\hline
+Tl. wheel centre height & 0 & 0 & 0 & 0 & 3 & 2 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+\textbf{St. aux. roll stiffness} & 0 & 0 & 0 & 0 & 8 & 0 & 1 & \textbf{11} & \textbf{11} & 3 & 0 & 0 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{77}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{68}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 8 & 0 & 1 & 2 & 4 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{70}} & \textbf{22} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 1 & 0 & 0 & 0 \\
+\hline
+St. damper & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 2 & 1 & 0 & 0 & 0 & 3 \\
+\hline
+Dr. damper & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 3 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textbf{Tl. damper} & 0 & 0 & 0 & 0 & 1 & 0 & 1 & \textbf{11} & 1 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 4 & 2 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. spring & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 0 & 0 & 1 & 1 \\
+\hline
+Dr. spring & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 9 & 9 & 1 & 0 & 0 & 2 & 2 \\
+\hline
+Tl. spring & 0 & 0 & 0 & 0 & 5 & 2 & 2 & 1 & 2 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+St. spring track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 3 & 4 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. spring track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 9 & 9 & 2 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. spring track & 0 & 0 & 0 & 0 & 2 & 1 & 2 & 1 & 2 & 2 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. dual spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. dual spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. eff. rolling radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. eff. rolling radius & 5 & 0 & 1 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. eff. rolling radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. $L$ for $F_y$ \& $M_z$ & 0 & 0 & 0 & 0 & 1 & 0 & 2 & 5 & 5 & 1 & 0 & 1 & 0 & 1 \\
+\hline
+Tl. $L$ for $F_y$ \& $M_z$ & 0 & 0 & 0 & 0 & 1 & 1 & 4 & 7 & 5 & 0 & 0 & 1 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{St. cornering stiffness}} & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{96}} & 1 & 0 & 1 & 2 & 1 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. cornering stiffness}} & 0 & 0 & 0 & 0 & 1 & 0 & 4 & \textbf{19} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 5 & 2 & 1 & 2 & 9 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. cornering stiffness}} & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & 9 & 3 & 0 & 3 & 0 \\
+\hline
+St. spring rate & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 2 & 0 & 0 & 1 & 0 \\
+\hline
+Dr. spring rate & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 9 & 8 & 1 & 0 & 1 & 0 & 0 \\
+\hline
+\textbf{Tl. spring rate} & 0 & 0 & 0 & 0 & \textbf{13} & 6 & 4 & 1 & 5 & 4 & 0 & 0 & 0 & 0 \\
+\hline
+St. unloaded radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. unloaded radius & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. unloaded radius & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. wheel spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+
+}{15}
+
+% LONG TABLE
+%----------------------------------------------
+
+%==============================================
+%      SECTION
+%==============================================
+\section{Geometrical CV Matrices}\label{section:cv-geometrical}
+
+The geometrical \gls{cv} matrices containing all of the geometrical \glspl{vdp} for each of the baseline combinations are included in Tables~\ref{table:cv-geometrical-quad-semi}~to~\ref{table:cv-geometrical-rigid-drawbar}.
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Geometrical CV matrix - quad semi-trailer}   
+\label{table:cv-geometrical-quad-semi}%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut\\
+
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM wheelbase}} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{63}} & 0 & 0 & \textbf{16} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{57}} & \textbf{14} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{77}} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & 4 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{63}} & \textbf{16} & \textbf{19} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL wheelbase}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 8 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{44}} & 9 & 5 & 1 & 2 \\
+\hline
+\textbf{PM axle spacing} & 0 & 0 & 0 & 0 & 5 & 0 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 0 & \textbf{14} \\
+\hline
+\textbf{TL axle spacing} & 0 & 0 & 0 & 0 & 5 & 2 & 0 & \textbf{15} & 0 & 9 & 3 & 5 & 4 & 2 & 8 \\
+\hline
+\textbf{PM hitch height} & 0 & 0 & 0 & 0 & \textbf{22} & 0 & 2 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM hitch long. loc.}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & 0 & 0 & 5 & \textbf{12} & \textbf{12} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 0 & 1 & 0 & 3 & 1 & 1 & \textbf{24} \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{88}} & 3 & \textbf{11} & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{76}} & 4 & 0 & \textbf{23} & 3 & 4 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{77}} & \textbf{15} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & \textbf{22} & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & 0 & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 6 & 0 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%-------------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Geometrical CV matrix - tridem interlink}   
+\label{table:cv-geometrical-tridem-interlink}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut \\
+
+
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM wheelbase}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & \textbf{24} & \textbf{16} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{62}} & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & \textbf{21} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{62}} & \textbf{24} & 4 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 wheelbase}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & 8 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & 5 & 1 & 5 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 wheelbase}} & 0 & \textbf{18} & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{98}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 4 & 8 & 0 & 4 \\
+\hline
+\textbf{PM axle spacing} & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 1 & 0 & \textbf{13} \\
+\hline
+TL 1 axle spacing & 0 & 0 & 0 & 0 & 3 & 1 & 1 & 1 & 0 & 4 & 2 & 5 & 8 & 1 & 8 \\
+\hline
+\textbf{TL 2 axle spacing} & 0 & 0 & 0 & 0 & 1 & 0 & 4 & \textbf{10} & 0 & 3 & \textbf{10} & 1 & 4 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM hitch height}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{71}} & 2 & \textbf{14} & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 hitch height}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM hitch long. loc.}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{47}} & 0 & 0 & \textbf{11} & \textbf{12} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 1 & 1 & 1 & 3 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 hitch long. loc.}} & 0 & \textbf{14} & 0 & 0 & \textbf{22} & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & \textbf{16} & 4 & 6 & 6 & 0 & 1 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{89}} & 6 & 1 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 1 front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 \\
+\hline
+TL 2 front overhang & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+TL 1 rear overhang & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 2 rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{17} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{54}} & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & 6 & 0 & \textbf{24} & 4 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 1 reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{95}} & 0 & 0 & 0 & 3 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & \textbf{22} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & 4 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{38}} & 3 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Geometrical CV matrix - rigid drawbar combination}   
+\label{table:cv-geometrical-rigid-drawbar}%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{SRTtrrcu~~~~}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut\\
+
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM wheelbase}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{48}} & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{98}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{81}} & \textbf{15} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{49}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{70}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{54}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{DL wheelbase}} & 0 & 0 & 0 & 0 & 4 & 2 & 4 & 8 & 9 & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 0 & 5 & 4 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL wheelbase}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{63}} & 4 & \textbf{12} \\
+\hline
+PM axle spacing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 0 & 8 \\
+\hline
+DL axle spacing & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 2 & 5 & 0 & 5 & 0 & 7 & 5 \\
+\hline
+\textbf{TL axle spacing} & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & \textbf{17} & 0 & 4 & 0 & 1 & 3 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM hitch height}} & 0 & 0 & 0 & 0 & 6 & 4 & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & 1 & 0 & 0 & 1 & \textbf{12} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{DL hitch height}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & \textbf{19} & 4 & 1 & 6 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM hitch long. loc.}} & 0 & 0 & 0 & 0 & 1 & 0 & 7 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{60}} & 4 & \textbf{11} & 4 & 0 & \textbf{11} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{DL hitch long. loc.}} & 0 & 0 & 0 & 0 & \textbf{18} & \textbf{17} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textbf{11} & \textbf{14} & 3 & 3 & 1 & 1 & \textbf{12} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM front overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & \textbf{18} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 \\
+\hline
+TL front overhang & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{91}} & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL rear overhang}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{17} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{96}} & 4 & 9 & \textbf{23} & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL reference height}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{76}} & \textbf{13} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{49}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{85}} & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL vehicle width}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 0 & 0 & 0 & 0 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%-------------------------------------------------
+
+%==============================================
+%      SECTION
+%==============================================
+\section{Inertial CV Matrices}\label{section:cv-inertial}
+
+The inertial CV matrices containing only the inertial \glspl{vdp} for each of the baseline combinations are included in Tables~\ref{table:cv-inertial-quad-semi}~to~\ref{table:cv-inertial-rigid-drawbar}.
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Inertial CV matrix - quad semi-trailer}   
+\label{table:cv-inertial-quad-semi}%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut\\
+
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM sprung mass}} & \textbf{23} & 3 & 6 & 5 & 1 & 1 & 6 & 1 & 4 & 8 & 3 & \textbf{23} & 3 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{69}} \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL sprung mass}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{85}} & 0 & \textbf{22} & \textbf{20} & 9 & 8 & \textbf{18} & 5 & \textbf{17} & \textbf{10} & 3 & 9 & \textbf{10} & 3 & \textbf{22} \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM \gls{cgx}}} & 0 & \textbf{17} & 0 & 0 & 0 & 0 & 6 & 3 & 1 & 8 & 2 & 6 & 1 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL \gls{cgx}}} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{85}} & 0 & 0 & \textbf{12} & 6 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{67}} & 8 & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & 3 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{68}} & \textbf{11} & \textbf{12} & 9 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM \gls{cgy}}} & 0 & 0 & 0 & 0 & 5 & 5 & 5 & 3 & \textbf{16} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & \textbf{21} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textbf{18} & \textbf{15} & 4 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL \gls{cgy}}} & 0 & 0 & 0 & 0 & \textbf{14} & 1 & 1 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & \textbf{10} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & 1 \\
+\hline
+PM \gls{cgz} & 0 & 0 & 0 & 0 & 4 & 1 & 7 & 1 & 2 & 0 & 0 & 2 & 0 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL \gls{cgz}}} & 0 & 0 & 0 & 0 & \textbf{22} & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & 3 & 7 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+PM \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 1 & 0 & 0 & 2 & 0 & 0 & 2 \\
+\hline
+TL \gls{ixx} & 0 & 0 & 0 & 0 & 1 & 1 & 3 & 1 & 5 & 0 & 0 & 1 & 0 & 0 & 0 \\
+\hline
+PM \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 1 & 1 & 5 & 8 & 1 & 3 & 3 & 3 & 0 & 0 & 2 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 1 & \textbf{19} & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{38}} & 3 & 6 & 4 & 7 & 2 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{12} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{48}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{20} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{65}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{38}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{cgx}}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & \textbf{12} & 7 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & 7 & 7 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{41}} & 4 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{78}} & \textbf{13} & \textbf{14} & \textbf{12} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{44}} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 5 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 7 & 9 & \textbf{20} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 1 & 7 & 3 & 2 & 2 & 0 \\
+\hline
+TL payload \gls{ixx} & 0 & 0 & 0 & 0 & 2 & 1 & 2 & 1 & 5 & 0 & 0 & 2 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{58}} & \textbf{22} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 7 & \textbf{19} & \textbf{14} & \textbf{20} & 6 & 1 & 3 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%-------------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Inertial CV matrix - tridem interlink}   
+\label{table:cv-inertial-tridem-interlink}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut\\
+
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM sprung mass}} & 5 & 1 & 9 & 8 & 2 & 7 & 1 & 0 & 3 & 2 & 3 & 9 & 5 & 8 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{99}} \\
+\hline
+\textbf{TL 1 sprung mass} & 6 & 5 & \textbf{12} & \textbf{10} & 2 & 1 & 1 & 8 & 5 & 4 & 1 & 2 & 4 & 1 & 8 \\
+\hline
+\textbf{TL 2 sprung mass} & 6 & 6 & \textbf{11} & \textbf{10} & 6 & \textbf{22} & \textbf{15} & 1 & 8 & 4 & 0 & 4 & 0 & 0 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM \gls{cgx}}} & 0 & 5 & 0 & 0 & 0 & 5 & 4 & 3 & 1 & 2 & 1 & 1 & 5 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 1 \gls{cgx}}} & 0 & \textbf{10} & 0 & 0 & 4 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{84}} & 5 & 1 & 2 & 1 & \textbf{14} & 7 & 3 & 3 \\
+\hline
+\textbf{TL 2 \gls{cgx}} & 0 & 2 & 0 & 0 & 7 & \textbf{15} & 8 & 9 & 2 & 7 & 0 & \textbf{13} & \textbf{10} & 3 & 3 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM \gls{cgy}}} & 0 & 0 & 0 & 0 & 7 & 7 & \textbf{13} & 3 & \textbf{13} & \textbf{12} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & \textbf{24} & \textbf{24} & \textbf{17} & 4 \\
+\hline
+\textbf{TL 1 \gls{cgy}} & 0 & 0 & 0 & 0 & \textbf{11} & 1 & \textbf{15} & 2 & \textbf{10} & 7 & \textbf{22} & 3 & \textbf{20} & \textbf{11} & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 2 \gls{cgy}}} & 0 & 0 & 0 & 0 & \textbf{17} & 0 & \textbf{18} & 3 & \textbf{17} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & 1 & 4 & \textbf{10} & 0 \\
+\hline
+PM \gls{cgz} & 0 & 0 & 0 & 0 & 4 & 2 & 2 & 1 & 3 & 0 & 0 & 2 & 0 & 0 & 1 \\
+\hline
+\textbf{TL 1 \gls{cgz}} & 0 & 0 & 0 & 0 & \textbf{11} & 1 & 7 & 4 & 2 & 0 & 1 & 1 & 0 & 0 & 0 \\
+\hline
+\textbf{TL 2 \gls{cgz}} & 0 & 0 & 0 & 0 & \textbf{19} & 2 & \textbf{21} & 4 & 5 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM \gls{ixx}}} & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 2 \\
+\hline
+\textbf{TL 1 \gls{ixx}} & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{10} & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+\hline
+TL 2 \gls{ixx} & 0 & 0 & 0 & 0 & 1 & 1 & 6 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+PM \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 3 & 3 & 6 & 2 & 0 & 0 & 3 & 1 & 0 & 1 \\
+\hline
+\textbf{TL 1 \gls{iyy}/\gls{izz}} & 0 & 0 & 0 & 0 & 0 & 8 & 7 & \textbf{15} & 1 & 0 & 1 & 1 & 1 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 2 \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & \textbf{15} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & 1 & 0 & 1 & 1 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 1 payload mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{92}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{73}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{52}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 6 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 payload mass}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{67}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{13} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{62}} & \textbf{13} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{51}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{69}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{58}} & 6 & \textbf{21} & \textbf{16} & 3 & 6 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 payload \gls{cgx}}} & 0 & \textbf{18} & 0 & 0 & 9 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textbf{13} & 2 & 2 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & \textbf{15} & 5 & 4 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 2 payload \gls{cgx}}} & 0 & 3 & 0 & 0 & \textbf{11} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & \textbf{18} & 1 & \textbf{13} & 1 & \textbf{24} & \textbf{19} & 6 & 6 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 1 payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{75}} & 1 & \textbf{16} & 9 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{56}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{39}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{93}} & \textbf{15} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{66}} & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{94}} & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{51}} & \textbf{24} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{18} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{67}} & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 1 payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{75}} & \textbf{16} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & \textbf{18} & 6 & 1 & 4 & 1 & 1 & 1 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{TL 2 payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{95}} & \textbf{13} & \textbf{20} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & 0 & 3 & 0 & 1 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 payload \gls{ixx}}} & 0 & 0 & 0 & 0 & 1 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 2 payload \gls{ixx}}} & 0 & 0 & 0 & 0 & 1 & 3 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 3 & 3 & 0 & 1 & 1 & 0 & 0 & 0\\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL 1 payload \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 0 & \textbf{19} & \textbf{17} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & 3 & 2 & 2 & 3 & 3 & 1 & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL 2 payload \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 1 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 5 & 1 & 4 & 1 & 0 & 0 & 0 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Inertial CV matrix - rigid drawbar combination}   
+\label{table:cv-inertial-rigid-drawbar}%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{SRTtrrcu~~~~}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut\\
+
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM sprung mass}} & 3 & 1 & 6 & 4 & 0 & 0 & 3 & 1 & 2 & 1 & 6 & 2 & 7 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} \\
+    \hline
+    DL sprung mass & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL sprung mass & 2 & 2 & 3 & 2 & 3 & 1 & 0 & 0 & 1 & 2 & 1 & 0 & 1 & 2 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{PM \gls{cgx}}} & 0 & 6 & 0 & 0 & 0 & 0 & 2 & 1 & 0 & 1 & \textbf{14} & 2 & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} \\
+    \hline
+    DL \gls{cgx} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 2 \\
+    \hline
+    TL \gls{cgx} & 0 & 0 & 0 & 0 & 7 & 3 & 1 & 4 & 1 & 0 & 2 & 0 & 2 & 2 \\
+    \hline
+    \textbf{PM \gls{cgy}} & 0 & 0 & 0 & 0 & \textbf{16} & 0 & 3 & 0 & 3 & 7 & 4 & \textbf{18} & \textbf{12} & \textbf{20} \\
+    \hline
+    DL \gls{cgy} & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL \gls{cgy}} & 0 & 0 & 0 & 0 & 9 & 3 & 0 & 1 & 1 & \textbf{10} & 1 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{cgz} & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 1 & 0 & 3 & 0 & 0 & 0 & 0 \\
+    \hline
+    DL \gls{cgz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{TL \gls{cgz}} & 0 & 0 & 0 & 0 & \textbf{11} & 4 & 1 & 2 & 2 & 2 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 4 & 3 & 0 & 0 & 0 & 0 \\
+    \hline
+    DL \gls{ixx} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL \gls{ixx} & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 2 & 5 & 1 & 0 & 2 & 1 & 3 \\
+    \hline
+    DL \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    TL \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 4 & 2 & 0 & 0 & 0 & 0 \\
+    \hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{PM payload mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & 0 & 0 & \textbf{19} & \textbf{17} & \textbf{14} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{10} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload mass}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{67}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{22} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{79}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & \textbf{16} \\
+\hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM payload \gls{cgx}}} & 0 & \textbf{12} & 0 & 0 & 3 & 0 & 7 & 3 & 2 & \textbf{10} & \textbf{20} & 3 & \textbf{15} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{71}} \\
+    \hline
+    \textbf{TL payload \gls{cgx}} & 0 & 0 & 0 & 0 & \textbf{21} & 9 & 4 & 2 & 6 & 2 & \textbf{10} & 0 & 9 & 5 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & 0 & 4 & 1 & 6 & \textbf{13} & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textbf{23} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{cgy}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & 2 & 5 & \textbf{14} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{14} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 1 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & 0 & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textbf{22} & 0 & 2 & 4 & 3 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{TL payload \gls{cgz}}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{97}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} & \textbf{23} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{47}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{52}} & 1 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{PM payload \gls{ixx}}} & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{21} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{58}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & 0 & 1 & 0 & 1\\
+    \hline
+    TL payload \gls{ixx} & 0 & 0 & 0 & 0 & 1 & 0 & 6 & 6 & 7 & 6 & 0 & 0 & 0 & 0 \\
+    \hline
+    PM payload \gls{iyy}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 4 & 9 & 1 & 0 & 3 & 1 & 2 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{TL payload \gls{iyy}/\gls{izz}}} & 0 & 0 & 0 & 0 & 1 & 0 & \textbf{13} & 8 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & \textbf{10} & 0 & 0 & 1 & 0 \\
+    \hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%-------------------------------------------------
+\newpage
+%==============================================
+%      SECTION
+%==============================================
+\section{Suspension CV Matrices}\label{section:cv-suspension}
+
+The suspension CV matrices containing only the suspension \glspl{vdp} for each of the baseline combinations are included in Tables~\ref{table:suspension-cv-quad-semi}~to~\ref{table:suspension-cv-rigid-drawbar}.
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Suspension CV matrix - quad semi-trailer}   
+\label{table:suspension-cv-quad-semi}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut \\
+
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{St. unsprung mass}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & \textbf{20} & \textbf{20} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & 0 & 0 & 3 & 4 & 0 & 3 & 9 & 0 & 5 & 3 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. unsprung mass}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{72}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{59}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{72}} & 0 & 3 & \textbf{13} & \textbf{15} & 1 & 7 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & 0 & \textbf{10} & 7 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. unsprung mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{76}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{22} & 0 & 3 & 0 & 1 & 3 & 3 & 0 & \textbf{11} & 6 & \textbf{10} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{St. axle track}} & 0 & 0 & 0 & 0 & 2 & 3 & 1 & 2 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{66}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{18} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{92}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{71}} \\
+    \hline
+    Dr. axle track & 0 & 0 & 0 & 0 & 9 & 1 & 8 & 5 & 2 & 0 & 0 & 0 & 1 & 1 & 4 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. axle track}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{81}} & 7 & \textbf{15} & 7 & \textbf{13} & 1 & 1 & 0 & 3 & 2 & 0 \\
+    \hline
+    St. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. axle centre height & 0 & 0 & 0 & 0 & 3 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    Tl. axle centre height & 0 & 0 & 0 & 0 & 9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textbf{St. roll centre height} & 0 & 0 & 0 & 0 & 6 & 2 & \textbf{11} & 6 & 1 & 2 & 8 & 0 & 2 & 1 & 2 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. roll centre height}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & \textbf{23} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & 4 & 6 & 3 & 1 & \textbf{14} & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} \\
+    \hline
+    \textbf{Tl. roll centre height} & 0 & 0 & 0 & 0 & 9 & \textbf{13} & \textbf{22} & 0 & 7 & 4 & \textbf{17} & 0 & \textbf{10} & 5 & 2 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{St. roll steer coef.}} & 0 & 0 & 0 & 0 & 6 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{65}} & 3 & 1 & 0 & 1 & 4 & 0 & 1 & 0 & 2 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. roll steer coef.}} & 0 & 0 & 0 & 0 & \textbf{12} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{92}} & 3 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{39}} & \textbf{10} & 9 & 3 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & \textbf{18} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. roll steer coef.}} & 0 & 0 & 0 & 0 & 2 & \textbf{22} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{54}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 0 & \textbf{17} & 0 & 6 & 3 & 3 \\
+    \hline
+    St. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 \\
+    \hline
+    Dr. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+    \hline
+    Dr. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 2 \\
+    \hline
+    Tl. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. wheel centre height & 0 & 0 & 0 & 0 & 1 & 1 & 2 & 1 & 3 & 0 & 1 & 1 & 4 & 6 & 5 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. wheel centre height}} & 0 & 0 & 0 & 0 & 2 & 2 & 1 & 2 & 0 & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{31}} & 1 & \textbf{23} & \textbf{23} & 2 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. wheel centre height}} & 0 & 0 & 0 & 0 & \textbf{11} & 7 & 9 & 8 & 5 & 5 & \textbf{19} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textbf{18} & 2 \\
+    \hline
+    \textbf{St. aux. roll stiffness} & 0 & 0 & 0 & 0 & \textbf{19} & 6 & \textbf{13} & 4 & 1 & 1 & 2 & 0 & 3 & 1 & 2 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{16} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{78}} & \textbf{15} & 9 & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & 1 & \textbf{21} & 4 & \textbf{12} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{89}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{52}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 6 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & \textbf{21} & 6 & 2 \\
+    \hline
+    \textbf{St. damper} & 0 & 0 & 0 & 0 & 3 & 0 & 2 & 3 & 1 & 0 & 1 & 0 & 0 & 0 & \textbf{22} \\
+    \hline
+    Dr. damper & 0 & 0 & 0 & 0 & 2 & 1 & 1 & 4 & 3 & 0 & 1 & 0 & 0 & 0 & 4 \\
+    \hline
+    \textbf{Tl. damper} & 0 & 0 & 0 & 0 & 5 & 0 & \textbf{14} & 3 & 2 & 0 & 0 & 0 & 0 & 0 & 2 \\
+    \hline
+    St. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 5 \\
+    \hline
+    Dr. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 2 \\
+    \hline
+    Tl. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 9 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 2 \\
+    \hline
+    St. jounce / rebound & 0 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. jounce / rebound & 0 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{St. spring}} & 0 & 0 & 0 & 0 & 8 & 3 & 3 & 3 & 4 & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & 1 & 7 & 7 & 6 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. spring}} & 0 & 0 & 0 & 0 & \textbf{11} & \textbf{13} & \textbf{23} & \textbf{17} & 0 & \textbf{21} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{43}} & 4 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. spring}} & 0 & 0 & 0 & 0 & 9 & 2 & 7 & 7 & 2 & \textbf{10} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{56}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 2 \\
+    \hline
+    St. spring track & 0 & 0 & 0 & 0 & 8 & 5 & 5 & 5 & 0 & 0 & 2 & 0 & 1 & 0 & 3 \\
+    \hline
+    \textbf{Dr. spring track} & 0 & 0 & 0 & 0 & \textbf{11} & 2 & \textbf{10} & 2 & 1 & 0 & 6 & 0 & 2 & 0 & 2 \\
+    \hline
+    \textbf{Tl. spring track} & 0 & 0 & 0 & 0 & 3 & 6 & \textbf{17} & 7 & 7 & 0 & 6 & 0 & 0 & 0 & 0 \\
+    \hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Suspension CV matrix - tridem interlink}   
+\label{table:suspension-cv-tridem-interlink}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut \\
+
+    \hline
+    \textbf{St. unsprung mass} & 0 & 0 & \textbf{15} & \textbf{17} & 0 & 4 & 1 & 2 & 0 & 3 & 1 & 0 & \textbf{14} & 2 & 5 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. unsprung mass}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{95}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & 0 & 4 & 0 & \textbf{10} & 0 & 6 & 0 & 0 & \textbf{14} & 5 & 4 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. unsprung mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{34}} & 8 & 1 & 8 & 1 & 2 & 1 & 0 & \textbf{10} & 4 & 1 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{St. axle track}} & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 2 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{41}} & 8 \\
+    \hline
+    Dr. axle track & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 3 & 1 & 1 & 1 & 0 & 1 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. axle track}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{94}} & 8 & 4 & \textbf{17} & 4 & 0 & 1 & 0 & 5 & 1 & 0 \\
+    \hline
+    St. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    Dr. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. axle centre height & 0 & 0 & 0 & 0 & 6 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    St. roll centre height & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 4 & 0 & 2 & 1 & 0 & 3 & 2 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. roll centre height}} & 0 & 0 & 0 & 0 & \textbf{24} & 2 & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & 1 & \textbf{19} & 1 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{51}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{75}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+    \hline
+    \textbf{Tl. roll centre height} & 0 & 0 & 0 & 0 & \textbf{17} & \textbf{15} & 6 & \textbf{10} & 3 & 1 & 2 & 0 & \textbf{17} & 4 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{St. roll steer coef.}} & 0 & 0 & 0 & 0 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. roll steer coef.}} & 0 & 0 & 0 & 0 & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & 4 & \textbf{17} & 2 & 9 & 0 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{51}} & \textbf{16} & 4 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. roll steer coef.}} & 0 & 0 & 0 & 0 & 1 & \textbf{21} & 1 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{18} & 0 & 2 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 \\
+    \hline
+    Dr. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    Tl. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    St. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 1 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. spin inertia}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{15} & 2 & 1 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{52}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{61}} \\
+    \hline
+    Tl. spin inertia & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 2 & 0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+    \hline
+    St. wheel centre height & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & 4 & 5 & 1 \\
+    \hline
+    \textbf{Dr. wheel centre height} & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 2 & 0 & 2 & 3 & 1 & \textbf{21} & \textbf{14} & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. wheel centre height}} & 0 & 0 & 0 & 0 & 8 & 2 & 1 & 3 & 1 & 1 & 1 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & 7 & 0 \\
+    \hline
+    St. aux. roll stiffness & 0 & 0 & 0 & 0 & 7 & 3 & 2 & 1 & 0 & 1 & 0 & 0 & 4 & 1 & 1 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{53}} & \textbf{10} & 8 & 7 & 2 & 5 & 7 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & 3 & 1 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{66}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 6 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{53}} & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & 7 & 0 \\
+    \hline
+    St. damper & 0 & 0 & 0 & 0 & 0 & 1 & 4 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 3 \\
+    \hline
+    Dr. damper & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 3 & 2 & 0 & 1 & 0 & 1 & 0 & 1 \\
+    \hline
+    Tl. damper & 0 & 0 & 0 & 0 & 2 & 3 & 4 & 3 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    Dr. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. damper track & 0 & 0 & 0 & 0 & 1 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. jounce / rebound & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spring & 0 & 0 & 0 & 0 & 2 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 7 & 5 & 1 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. spring}} & 0 & 0 & 0 & 0 & 6 & 1 & 2 & 2 & 0 & 1 & 3 & 4 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{61}} & \textbf{13} \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. spring}} & 0 & 0 & 0 & 0 & \textbf{15} & 6 & 8 & 3 & 1 & 4 & 1 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{74}} & \textbf{14} & 0 \\
+    \hline
+    St. spring track & 0 & 0 & 0 & 0 & 3 & 2 & 0 & 2 & 0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+    \hline
+    Dr. spring track & 0 & 0 & 0 & 0 & 5 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 4 & 0 & 0 \\
+    \hline
+    Tl. spring track & 0 & 0 & 0 & 0 & 5 & 1 & 7 & 7 & 2 & 0 & 2 & 0 & 3 & 0 & 0 \\
+    \hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Suspension CV matrix - rigid drawbar combination}   
+\label{table:suspension-cv-rigid-drawbar}%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{SRTtrrcu~~~~}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut\\
+
+    \hline
+    \textbf{St. unsprung mass} & \textbf{22} & 0 & \textbf{14} & \textbf{13} & 0 & 0 & 1 & 0 & 0 & 0 & \textbf{16} & \textbf{14} & 1 & 6 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. unsprung mass}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{94}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & 0 & 0 & 1 & 0 & 0 & 0 & \textbf{18} & 9 & 0 & 6 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. unsprung mass}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{10} & \textbf{10} & 1 & 2 & 1 & 0 & 5 & 1 & 0 & 2 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{St. axle track}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 9 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+    \hline
+    Dr. axle track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 7 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. axle track}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & 5 & 3 & 3 & 5 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. axle centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. axle centre height & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. roll centre height & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 8 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. roll centre height}} & 0 & 0 & 0 & 0 & 4 & 0 & \textbf{12} & \textbf{15} & 7 & 0 & \textbf{16} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{53}} & 2 & 4 \\
+    \hline
+    Tl. roll centre height & 0 & 0 & 0 & 0 & 7 & 7 & 7 & 1 & 3 & 2 & 2 & 2 & 0 & 0 \\
+    \hline
+    \textbf{St. roll steer coef.} & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{22} & 0 & 0 & 0 & 0 & 3 & 0 & 4 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. roll steer coef.}} & 0 & 0 & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{54}} & \textbf{12} & \textbf{21} & \textbf{12} & 8 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 1 & 2 \\
+    \hline
+    \textbf{Tl. roll steer coef.} & 0 & 0 & 0 & 0 & 0 & 1 & 8 & 1 & \textbf{15} & 6 & 3 & 1 & 0 & 1 \\
+    \hline
+    St. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+    \hline
+    Dr. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. \gls{ixx}/\gls{izz} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. spin inertia & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. spin inertia}} & 0 & 0 & 0 & 0 & 5 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{29}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 9 & 1 & 3 \\
+    \hline
+    Dr. wheel centre height & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 3 & 1 & 2 \\
+    \hline
+    Tl. wheel centre height & 0 & 0 & 0 & 0 & 3 & 3 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+    \hline
+    \textbf{St. aux. roll stiffness} & 0 & 0 & 0 & 0 & 8 & 0 & 2 & \textbf{15} & \textbf{11} & 3 & 0 & \textbf{14} & 0 & 2 \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{77}} & 1 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{97}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 8 & 3 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{68}} & 2 & \textbf{12} \\
+    \hline
+    \textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. aux. roll stiffness}} & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{61}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{22} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{21} & 1 & 0 & 0 \\
+    \hline
+    \textbf{St. damper} & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 2 & 1 & 1 & 6 & 0 & \textbf{10} \\
+    \hline
+    Dr. damper & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 3 & 0 & 0 & 6 & 0 & 1 \\
+    \hline
+    \textbf{Tl. damper} & 0 & 0 & 0 & 0 & 1 & 0 & 1 & \textbf{16} & 1 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    St. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 1 & 0 & 0 & 1 & 0 & 0 \\
+    \hline
+    Tl. damper track & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 5 & 2 & 1 & 0 & 0 & 0 & 0 \\
+    \hline
+    Dr. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    Tl. jounce / rebound & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    \hline
+    St. spring & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 3 & 2 & 2 & 2 & 8 & 1 & 3 \\
+    \hline
+    \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. spring}} & 0 & 0 & 0 & 0 & 1 & 1 & 2 & \textbf{13} & 9 & 1 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{25}} & 3 & 5 \\
+    \hline
+    Tl. spring & 0 & 0 & 0 & 0 & 5 & 5 & 5 & 2 & 2 & 1 & 1 & 1 & 0 & 0 \\
+    \hline
+    \textbf{St. spring track} & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 5 & 4 & 1 & 0 & \textbf{16} & 0 & 1 \\
+    \hline
+    \textbf{Dr. spring track} & 0 & 0 & 0 & 0 & 0 & 0 & 3 & \textbf{12} & 9 & 2 & 0 & \textbf{14} & 0 & 1 \\
+    \hline
+    Tl. spring track & 0 & 0 & 0 & 0 & 2 & 3 & 4 & 1 & 2 & 2 & 0 & 0 & 0 & 0 \\
+    \hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%-------------------------------------------------
+
+%==============================================
+%      SECTION
+%==============================================
+\section{Tyre CV Matrices}\label{section:cv-tyre}
+
+The tyre CV matrices containing only the tyre \glspl{vdp} for each of the baseline combinations are included in Tables~\ref{table:tyre-cv-quad-semi}~to~\ref{table:tyre-cv-rigid-drawbar}.
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Tyre CV matrix - quad semi-trailer}   
+\label{table:tyre-cv-quad-semi}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut \\
+
+\hline
+Dr. dual spacing & 0 & - & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 \\
+\hline
+St. eff. rolling radius & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. eff. rolling radius}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & - & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 0 & 0 & 0 \\
+\hline
+Tl. eff. rolling radius & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. $L$ for $F_y$ \& $M_z$}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{82}} & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & 8 & 0 & 7 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & \textbf{10} & 5 & 2 & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. $L$ for $F_y$ \& $M_z$}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{38}} & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{42}} & \textbf{17} & 1 & \textbf{17} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{13} & \textbf{17} & 3 & 2 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{St. cornering stiffness}} & 0 & - & 0 & 0 & \textbf{16} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 5 & 2 & 4 & \textbf{12} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{91}} & \textbf{12} & \textbf{17} & 7 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{32}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. cornering stiffness}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{55}} & 2 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{94}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{61}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{90}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. cornering stiffness}} & 0 & - & 0 & 0 & \textbf{16} & \textbf{15} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{45}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{76}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{99}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{99}} & \textbf{14} \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{St. spring rate}} & 0 & - & 0 & 0 & \textbf{18} & 1 & 0 & 2 & 7 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{57}} & 4 & \textbf{16} & 5 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. spring rate}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 1 & \textbf{11} & 5 & 3 & \textbf{10} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{78}} & \textbf{18} & \textbf{16} & \textbf{24} & 3 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Tl. spring rate}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{44}} & 3 & \textbf{22} & 2 & \textbf{18} & \textbf{13} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & 1 & \textbf{20} & \textbf{19} & 0 \\
+\hline
+\textbf{St. unloaded radius} & 0 & - & 0 & 0 & 2 & 0 & 0 & 0 & 3 & 0 & 3 & \textbf{14} & 2 & 4 & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. unloaded radius}} & 0 & - & 0 & 0 & 2 & 0 & 1 & 0 & 0 & 6 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & \textbf{15} & 8 & \textbf{14} & 1 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. unloaded radius}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{52}} & 1 & 1 & 1 & 3 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{77}} & 4 & \textbf{11} & \textbf{11} & 1 \\
+\hline
+St. wheel spin inertia & 0 & - & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 0 & 0 & 0 \\
+\hline
+Dr. wheel spin inertia & 0 & - & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. wheel spin inertia & 0 & - & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 4 & 2 & 0 & 0 & 0 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Tyre CV matrix - tridem interlink}   
+\label{table:tyre-cv-tridem-interlink}%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb~~~~}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{MoD}\end{sideways} & \begin{sideways}\textbf{DoM}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut \\
+
+\hline
+Dr. dual spacing & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0 & 0 \\
+\hline
+Tl. dual spacing & 0 & - & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 \\
+\hline
+St. eff. rolling radius & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. eff. rolling radius}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & - & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 1 & 0 & 0 & 1 \\
+\hline
+Tl. eff. rolling radius & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. $L$ for $F_y$ \& $M_z$}} & 0 & - & 0 & 0 & 5 & \textbf{16} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & 9 & 3 & 6 & \textbf{13} & 2 & 5 & 3 & 2 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Tl. $L$ for $F_y$ \& $M_z$}} & 0 & - & 0 & 0 & \textbf{19} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{37}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{50}} & \textbf{22} & 7 & \textbf{14} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{56}} & 4 & \textbf{20} & \textbf{10} & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{St. cornering stiffness}} & 0 & - & 0 & 0 & 1 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{13} & 1 & 7 & \textbf{10} & \textbf{10} & \textbf{10} & 7 & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{30}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. cornering stiffness}} & 0 & - & 0 & 0 & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{28}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{33}} & \textbf{14} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 3 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{89}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. cornering stiffness}} & 0 & - & 0 & 0 & 9 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{71}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{64}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textbf{14} \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{St. spring rate}} & 0 & - & 0 & 0 & \textbf{10} & 2 & 3 & 1 & 6 & 4 & 5 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{60}} & 4 & \textbf{16} & 6 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{Dr. spring rate}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{40}} & 2 & 0 & 3 & 2 & 4 & 8 & \textbf{18} & \textbf{11} & \textbf{20} & 3 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. spring rate}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 2 & \textbf{15} & 3 & \textbf{13} & 2 & 1 & 3 & 1 \\
+\hline
+\textbf{St. unloaded radius} & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 3 & \textbf{15} & 1 & 4 & 1 \\
+\hline
+\textbf{Dr. unloaded radius} & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 2 & \textbf{14} & 7 & \textbf{13} & 1 \\
+\hline
+\textbf{Tl. unloaded radius} & 0 & - & 0 & 0 & \textbf{17} & 1 & 0 & 0 & 2 & 3 & 2 & 2 & 8 & 4 & 0 \\
+\hline
+St. wheel spin inertia & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 9 & 1 & 0 & 0 & 0 \\
+\hline
+\textbf{Dr. wheel spin inertia} & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & \textbf{11} & 2 & 0 & 0 & 0 \\
+\hline
+Tl. wheel spin inertia & 0 & - & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 2 & 1 & 0 & 0 & 0 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+
+\begin{table}[H]
+\centering\scriptsize
+\caption{Tyre CV matrix - rigid drawbar combination}   
+\label{table:tyre-cv-rigid-drawbar}%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+\multicolumn{1}{|c|}{\textbf{VDP}} & \begin{sideways}\textbf{STA}\end{sideways} & \begin{sideways}\textbf{GRAa}\end{sideways} & \begin{sideways}\textbf{GRAb}\end{sideways} & \begin{sideways}\textbf{ACC}\end{sideways} & \begin{sideways}\textbf{SRTt}\end{sideways} & \begin{sideways}\textbf{SRTtrrcu~~~~}\end{sideways} & \begin{sideways}\textbf{YDC}\end{sideways} & \begin{sideways}\textbf{RA}\end{sideways} & \begin{sideways}\textbf{HSTO}\end{sideways} & \begin{sideways}\textbf{TASP}\end{sideways} & \begin{sideways}\textbf{LSSP}\end{sideways} & \begin{sideways}\textbf{TS}\end{sideways} & \begin{sideways}\textbf{FS}\end{sideways} & \begin{sideways}\textbf{STFD}\end{sideways} \bigstrut \\
+
+\hline
+Dr. dual spacing & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+\hline
+Tl. dual spacing & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+St. eff. rolling radius & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. eff. rolling radius}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & - & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 \\
+\hline
+Tl. eff. rolling radius & 0 & - & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. $L$ for $F_y$ \& $M_z$}} & 0 & - & 0 & 0 & 9 & 8 & 2 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{27}} & \textbf{15} & \textbf{11} & \textbf{12} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{92}} & 8 & 1 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. $L$ for $F_y$ \& $M_z$}} & 0 & - & 0 & 0 & \textbf{11} & \textbf{15} & 4 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{36}} & \textbf{15} & 4 & \textbf{11} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 7 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{St. cornering stiffness}} & 0 & - & 0 & 0 & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 3 & 1 & \textbf{12} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{54}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{83}} & \textbf{13} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Dr. cornering stiffness}} & 0 & - & 0 & 0 & 8 & 5 & 4 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{87}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{55}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{69}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{58}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{74}} & 9 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. cornering stiffness}} & 0 & - & 0 & 0 & 3 & 5 & 8 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{26}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 4 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{St. spring rate}} & 0 & - & 0 & 0 & 2 & 0 & 0 & 3 & 1 & \textbf{21} & 2 & 8 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}} & 0 \\
+\hline
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{Dr. spring rate}} & 0 & - & 0 & 0 & 1 & 2 & 1 & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{46}} & \textbf{22} & \textbf{12} & 3 & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{70}} & 8 & 0 \\
+\hline
+\textcolor[rgb]{0.851, 0.373, 0.008}{\textbf{Tl. spring rate}} & 0 & - & 0 & 0 & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & 4 & 7 & \textbf{15} & \textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{48}} & 0 & 2 & 0 & 0 \\
+\hline
+St. unloaded radius & 0 & - & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 5 & 1 & 7 & 9 & 0 \\
+\hline
+\textbf{Dr. unloaded radius} & 0 & - & 0 & 0 & 1 & 1 & 0 & 1 & 1 & 2 & 0 & 4 & \textbf{11} & 0 \\
+\hline
+Tl. unloaded radius & 0 & - & 0 & 0 & 7 & 7 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 \\
+\hline
+St. wheel spin inertia & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Dr. wheel spin inertia & 0 & - & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+Tl. wheel spin inertia & 0 & - & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+
+\end{tabular}%
+\end{table}%
+
+%      TABLE
+%----------------------------------------------

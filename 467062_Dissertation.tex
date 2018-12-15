@@ -1,0 +1,107 @@
+%----------------------------------------------
+%      DOCUMENT TYPE, FONT SIZE AND FONT STYLE
+%----------------------------------------------
+% FONT SIZE, PAGE SIZE AND DOCUMENT TYPE
+\documentclass[11pt, a4paper]{report} 
+
+% FONT SETTINGS
+% Option sfdefault only if the base font is sans serif
+\usepackage[sfdefault]{roboto}
+\usepackage[T1]{fontenc}
+%----------------------------------------------
+%      DOCUMENT SETTINGS AND TITLEPAGE
+%----------------------------------------------
+% Bringing in main settings
+\usepackage{sty/Settings}
+% Setting the title page style
+\usepackage{sty/TitlePage_WitsDissertation}
+
+%----------------------------------------------
+%      BIBLIOGRAPHY SETTINGS
+%----------------------------------------------
+% BIBLIOGRAPHY STYLE AND SORTING
+\usepackage[
+backend=biber,
+style=numeric,
+firstinits=true,
+sorting=none % this will sort according to the order of citation
+]{biblatex}
+
+% BIBLIOGRAPHY FILE
+\addbibresource{Mendeley.bib}
+
+%----------------------------------------------
+%      REPORT DETAILS
+%----------------------------------------------
+\title{RELATIVE INFLUENCE OF HIGH CAPACITY VEHICLE DESIGN PARAMETERS}
+\AuthorN{Jarryd Andre Deiss}
+
+%----------------------------------------------
+%      CUSTOM VARIABLES 
+%----------------------------------------------
+% \newcommand{\commandName}{value}
+
+%----------------------------------------------
+%      TABLE OF CONTENTS
+%----------------------------------------------
+
+\makeglossaries{}
+\input{nom/00a_Symbols}
+\input{nom/00b_Acronyms}
+\input{nom/00c_GlossaryItems}
+
+%----------------------------------------------
+%      DOCUMENT METADATA
+%----------------------------------------------
+\setmetadata{}
+
+%----------------------------------------------
+%      START EXECUTION OF THE DOCUMENT
+%----------------------------------------------
+\begin{document}
+
+%----------------------------------------------
+%      Preamble
+%----------------------------------------------
+\begin{preamble}
+\maketitle 
+\input{tex/01_Preamble}
+\end{preamble}
+
+%----------------------------------------------
+%      Report Sections
+%----------------------------------------------
+\input{tex/03_Introduction}
+\input{tex/04_LiteratureReview}
+\input{tex/05_Objectives}
+\input{tex/06_Methodology}
+\input{tex/07_BaselineVehicles}
+\input{tex/08_ParameterRange}
+\input{tex/09_Results}
+\input{tex/10_Discussion}
+\input{tex/11_Conclusions}
+
+%----------------------------------------------
+%      PRINT BIBLIOGRAPHY
+%----------------------------------------------
+\sloppy
+% The references section set-up as below will allow for it to be references in the text and ensure that the heading is references instead of bibliography
+\chapter*{References}\label{section:references}
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[heading=none]
+\fussy
+
+%----------------------------------------------
+%      Glossary - removed for now
+%----------------------------------------------
+% \glossarylist{} 
+
+%----------------------------------------------
+%      Appendices
+%----------------------------------------------
+\appendix %Command which changes the formatting of subsequent sections to be appendices
+\input{tex/Appendix_BaselineModels}
+\input{tex/Appendix_CvMatrices}
+\input{tex/Appendix_NtcValidation}
+\input{tex/Appendix_ManufacturerData}
+\end{document}

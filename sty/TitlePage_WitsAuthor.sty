@@ -1,0 +1,40 @@
+%--------------------------------------------------------------------------------------
+%      PAGE GEOMETRY
+%--------------------------------------------------------------------------------------
+\geometry{
+a4paper,
+total={170mm, 257mm},
+left=20mm,
+top=20mm,
+}
+%--------------------------------------------------------------------------------------
+%      TITLE PAGE & DECLARATION
+%--------------------------------------------------------------------------------------
+\def\maketitle{\begin{titlepage}
+\hyphenpenalty=10000       % Absolutely no hyphenation breaks
+
+{\Huge\bf\centering \@title \par} \hfill  %Inserts title centered
+{\@ReportDay\ \@ReportMonth\ \@ReportYear}
+\vspace*{10pt}
+
+  %--------------------------------------------------------------------------------------
+  %      Generate logo with text besides it
+  %--------------------------------------------------------------------------------------
+\begin{minipage}{0.5\textwidth}
+\includegraphics[height=100\p@]{fig/UnivLogo}
+\end{minipage} \hfill
+\begin{minipage}{0.5\textwidth}
+{\centering University of the Witwatersrand\\
+Engineering and the Built Environment\\
+Mechanical, Industrial \& Aeronautical Engineering}
+\end{minipage}
+
+\vspace*{\fill} %I am assuming this fills to the end of the page
+
+  %--------------------------------------------------------------------------------------
+  %      Inserting assessor information
+  %--------------------------------------------------------------------------------------
+\textbf{Author:} \@AuthorN\\
+\textbf{T:} \@AuthorT \hspace{35pt} \textbf{M:} \@AuthorM \hspace{35pt} \textbf{E:} \@AuthorE \hfill Ver \@ReportRev\\
+\end{titlepage}
+}

@@ -1,0 +1,129 @@
+%--------------------------------------------------------------------------------------
+%      CUSTOM COMMANDS FOR LATEX
+%--------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+%      Symbols
+%--------------------------------------------------------------------------------------
+\newcommand{\microseconds}[0]{\ensuremath{{\mu}s}} 	%microseconds
+\newcommand{\degree}{\ensuremath{^\circ}} 			%Degree
+
+\newcommand{\sson}{\textsuperscript{1}}			% Superscript one
+\newcommand{\sstw}{\textsuperscript{2}}			% Squared
+\newcommand{\ssth}{\textsuperscript{3}}			% Cubed
+\newcommand{\ssfo}{\textsuperscript{4}}			% Superscript four
+\newcommand{\ssfi}{\textsuperscript{5}}			% Superscript five
+\newcommand{\sssi}{\textsuperscript{6}}			% Superscript six
+\newcommand{\ssse}{\textsuperscript{7}}			% Superscript seven
+\newcommand{\ssei}{\textsuperscript{8}}			% Superscript eight
+\newcommand{\ssni}{\textsuperscript{9}}			% Superscript nine
+
+
+\newcommand{\trucksim}[0]{TruckSim\textsuperscript{\tiny\textregistered}} %Correctly formatted TruckSim
+\newcommand{\matlab}[0]{MATLAB\textsuperscript{\tiny\textregistered}} %Correctly formatted MatLab
+
+\def\School{School of Mechanical, Industrial \& Aeronautical Engineering}
+\def\Wits{University of the Witwatersrand, Johannesburg}
+\def\LMS{Wits-e}
+\def\MiKTeX{MiK\TeX}
+\def\BibTeX{Bib\TeX}
+\def\BibLaTeX{Bib\LaTeX}
+\def\TeXnicCenter{{\TeX}nicCenter}
+
+%--------------------------------------------------------------------------------------
+%      Image placement
+%--------------------------------------------------------------------------------------
+\newcommand{\putfig}[4]{\begin{figure}[!ht]\centering\includegraphics[width=#1\textwidth]{#2}\caption{#3}\label{#4}\end{figure}}
+\newcommand{\putfigH}[4]{\begin{figure}[H]\centering\includegraphics[width=#1\textwidth]{#2}\caption{#3}\label{#4}\end{figure}}
+
+%SVG Images
+% \putsvgfig{fractional width}{image_file_name.ext}{caption text}{label} inserts an image, image_file_name.ext_tex (where ext is either eps or pdf) (note: NO spaces), into the body of the text with a width specified as a fraction of the text (e.g. if fractional width is 0.5, the image will be 50% of the textwidth) with the caption specified by the caption text (including citations and cross-references) and applies the label specified
+\newcommand{\putsvgfig}[4]{\begin{figure}[!ht]\centering\def\svgwidth{#1\textwidth}\input{#2_tex}\caption{#3}\label{#4}\end{figure}}
+\newcommand{\putsvgfigH}[4]{\begin{figure}[H]\centering\def\svgwidth{#1\textwidth}\input{#2_tex}\caption{#3}\label{#4}\end{figure}}
+
+%--------------------------------------------------------------------------------------
+%      Table Placement
+%--------------------------------------------------------------------------------------
+% \stdlongtable{Caption}{Label}{Column_Spec}{Headings}{Width}{portrait/landscape}{Font_Spec}{Contents} inserts a table which automatically spans multiple pages, if necessary, using the longtabu package (part of tabu). It inserts the Caption and labels the table (only on the first page) with the specified Label for later reference. The Column_Spec follows the pattern of the tabu package and can be adjusted as necessary to fit the table into the Width to which it is expanded. The page can be automatically formatted as a landscape page (using the lscape package) if the user specifies landscape otherwise the command will default to a portrait orientation. Font_Spec is another argument used to specify the font size in the table body other than the normal size and should follow the LaTeX font conventions (i.e. be one of (in ascending order); tiny, scriptsize, fontsize, small, large, Large, LARGE, huge or Huge). The caption of the table will be specified in the normalsize. Finally, Contents is the tabular-formatted contents of the table.
+\newcommand{\stdlongtable}[9]{
+#7	%Includes table body text size specification if included
+\ifthenelse{\equal{#6}{landscape}}{\begin{landscape}}{}
+\setlength{\LTcapwidth}{#5}
+\begin{center}
+\begin{longtabu} to #5 {#3}
+\caption{{\normalsize #1}#2}\\\hline
+#4\\\endfirsthead
+\caption[]{{\normalsize #1 (cont.)}}\\\hline
+#4\\\endhead
+\multicolumn{#9}{r}{\textit{Continued on next page}}
+\endfoot
+\endlastfoot
+#8
+\end{longtabu}
+\end{center}
+\ifthenelse{\equal{#6}{landscape}}{\end{landscape}}{}
+\normalsize
+}
+
+% \stdtable{Caption}{Label}{Column_Spec}{Headings}{Width}{portrait/landscape}{Font_Spec}{Contents} inserts a table on a single page only using the tabu package. It inserts the Caption and labels the table (only on the first page) with the specified Label for later reference. The Column_Spec follows the pattern of the tabu package and can be adjusted as necessary to fit the table into the Width to which it is expanded. The page can be automatically formatted as a landscape page (using the lscape package) if the user specifies landscape otherwise the command will default to a portrait orientation. Font_Spec is another argument used to specify the font size in the table body other than the normal size and should follow the LaTeX font conventions (i.e. be one of (in ascending order); tiny, scriptsize, fontsize, small, large, Large, LARGE, huge or Huge). The caption of the table will be specified in the normalsize. Finally, Contents is the tabular-formatted contents of the table.
+\newcommand{\stdtable}[8]{
+\ifthenelse{\equal{#6}{landscape}}{\begin{landscape}}{}
+\setlength{\LTcapwidth}{#5}
+\begin{table}[!th]
+\centering
+\caption{{\normalsize #1\label{#2}}}
+#7	%Includes table body text size specification if included
+\begin{tabu} to #5 {#3}
+\hline
+#4\\\hline
+#8
+\hline
+\end{tabu}
+\end{table}
+\ifthenelse{\equal{#6}{landscape}}{\end{landscape}}{}
+\normalsize
+}
+
+% \puttable{caption text}{label}{column specfication}{content} inserts a standard table float into the document with the specification given (columns etc.), with the specified caption and label and embeds the content specified in the fourth field, typically generated using excel2latex. No suitable for very long tables
+\newcommand{\puttable}[4]{\begin{table}[!ht]\centering\caption{#1}\label{#2}\begin{tabular}{#3}#4\end{tabular}\end{table}}
+
+%--------------------------------------------------------------------------------------
+%      Letter specific commands
+%--------------------------------------------------------------------------------------
+\makeatletter
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+%--------------------------------------------------------------------------------------
+%      Attachments
+%--------------------------------------------------------------------------------------
+% \autoincludepdf{Name}{TOC_Entry}{Pages}{Section_Type} inserts the PDF, Name.pdf, into the document at that point and creates a Table of Contents entry for it with the text, TOC_Entry. By default it will include the entire document but if a page range or number of pages is specified (as per the pdfpages documentation but without the enclosing curly brackets) it will include only those. By default the PDF is included as a chapter but a specification of a different LaTeX section type (e.g. section, subsection, subsubsection, paragraph, or subparagraph) will specify the included pages as that sort of document. If the final two options are not used, empty sets of curly brackets must be used. This command will nly include the pages in the final PDF if ompiled using the LaTeX => PDF format and will insert blank pages in the LaTeX => DVI, LaTeX => PS or LaTeX => PS => PDF profiles
+\newcommand{\autoincludepdf}[4]{\ifthenelse{\isempty{#4}}{\phantomsection\addcontentsline{toc}{chapter}{#2}}{\phantomsection\addcontentsline{toc}{#4}{#2}}
+\ifthenelse{\isempty{#3}}{\includepdf[pages=-]{#1.pdf}}{\includepdf[pages={#3}]{#1.pdf}}}
+
+%--------------------------------------------------------------------------------------
+%      Vector formatting
+%--------------------------------------------------------------------------------------
+%COPIED FROM FILE SUPPLIED BY http://www.dfcd.net/articles/latex/latex.html TO PROVIDE VECTOR AND INTEGRAL FORMATTING FOR EQUATIONS
+%Modified to include \ensuremath commands for commands without but requiring it
+\let\vaccent=\v % rename builtin command \v{} to \vaccent{}
+\renewcommand{\v}[1]{\ensuremath{\mathbf{#1}}} % for vectors
+\newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath$ #1 $}}} % for vectors of Greek letters
+\newcommand{\uv}[1]{\ensuremath{\mathbf{\hat{#1}}}} % for unit vector
+\newcommand{\abs}[1]{\ensuremath{\left| #1 \right|}} % for absolute value
+\newcommand{\avg}[1]{\ensuremath{\left< #1 \right>}} % for average
+\let\underdot=\d % rename builtin command \d{} to \underdot{}
+\renewcommand{\d}[2]{\ensuremath{\frac{d #1}{d #2}}} % for derivatives
+\newcommand{\dd}[2]{\ensuremath{\frac{d^2 #1}{d #2^2}}} % for double derivatives
+\newcommand{\pd}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}} % for partial derivatives
+\newcommand{\pdd}[2]{\ensuremath{\frac{\partial^2 #1}{\partial #2^2}}} % for double partial derivatives
+\newcommand{\pdc}[3]{\ensuremath{\left( \frac{\partial #1}{\partial #2} \right)_{#3}}} % for thermodynamic partial derivatives
+\newcommand{\ket}[1]{\ensuremath{\left| #1 \right>}} % for Dirac bras
+\newcommand{\bra}[1]{\ensuremath{\left< #1 \right|}} % for Dirac kets
+\newcommand{\braket}[2]{\ensuremath{\left< #1 \vphantom{#2} \right|\left. #2 \vphantom{#1} \right>}} % for Dirac brackets
+\newcommand{\matrixel}[3]{\ensuremath{\left< #1 \vphantom{#2#3} \right| #2 \left| #3 \vphantom{#1#2} \right>}} % for Dirac matrix elements
+\newcommand{\grad}[1]{\ensuremath{\gv{\nabla} #1}} % for gradient
+\let\divsymb=\div % rename builtin command \div to \divsymb
+\renewcommand{\div}[1]{\ensuremath{\gv{\nabla} \cdot #1}} % for divergence
+\newcommand{\curl}[1]{\ensuremath{\gv{\nabla} \times #1}} % for curl
+\let\baraccent=\= % rename builtin command \= to \baraccent
+\renewcommand{\=}[1]{\ensuremath{\stackrel{#1}{=}}} % for putting numbers above =

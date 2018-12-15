@@ -1,0 +1,1327 @@
+\chapter{Baseline Vehicle Model Data}\label{appendix:baseline-models}
+
+%----------------------------------------------
+%      SECTION
+%----------------------------------------------
+\section{Summary of Baseline Vehicle Design Parameters}\label{section:summary-of-evaluted-vehicle-design-parameters}
+
+The sections that follow summarise the configuration of each baseline combination and include the range of values evaluated for each \gls{vdp}. The ranges have been separated into the following categories; vehicle units (prime movers and trailers), axles and tyres.
+
+%      SUBSECTION
+%----------------------------------------------
+\subsection{Vehicle Design Parameters for Vehicle Units}\label{section:summary-of-vehicle-unit-design-parameters}
+
+%      SUBSUBSECTION --------------------------
+\subsubsection{Prime Movers}\label{section:vdp-range-prime-mover}
+
+The axle configuration on the truck tractor and rigid truck is as follows:
+
+\begin{enumerate}
+	\item \textbf{Steer:} Steer axle with 315/80 R22.5 tyres (see Table~\ref{table:vdp-range-axle-steer-315})
+	\item \textbf{Drive:} Drive axle with 315/80 R22.5 tyres (see Table~\ref{table:vdp-range-axle-drive-315})
+\end{enumerate}
+
+A detailed summary of the \glspl{vdp} and their evaluated range for the truck tractor and rigid truck is presented in Tables~\ref{table:vdp-range-prime-mover-tractor} and \ref{table:vdp-range-prime-mover-rigid} respectively.
+
+Both baseline prime movers are fitted with the same engine, gearbox and powertrain as per Tables~\ref{table:baseline-engine-torque-curve}~to~\ref{table:baseline-differential} which remain unchanged for all simulations.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Wheelbase & mm    & 3885  & 3061  & 4360  & 79\%  & 112\% \\
+			Axle spacing & mm    & 1370  & 1200  & 1400  & 88\%  & 102\% \\
+			Hitch height & mm    & 1278  & 1088  & 1350  & 85\%  & 106\% \\
+			Hitch longitudinal location & mm    & -3375  & -3200  & -3885  & 95\%  & 115\% \\
+			Prime mover sprung mass & kg    & 6598  & 4428  & 6598  & 67\%  & 100\% \\
+			Prime mover \gls{cgx} & mm    & -1001  & -801   & -1201  & 80\%  & 120\% \\
+			Prime mover \gls{cgy} & mm    & 0     & -250   & 250   & 10\% of width & 10\% of width \\
+			Prime mover \gls{cgz} & mm    & 1204  & 1070  & 1426  & 89\%  & 118\% \\
+			Prime mover \gls{rx} & m     & 0.760 & 0.532 & 0.988 & 70\%  & 130\% \\
+			Prime mover \gls{ry} & m     & 1.943 & 1.166 & 2.720 & 60\%  & 140\% \\
+			Prime mover \gls{rz} & m     & 1.943 & 1.166 & 2.720 & 60\%  & 140\% \\
+			Front overhang & mm    & 1365  & 1300  & 1820  & 95\%  & 133\% \\
+			Rear overhang & mm    & 1013  & 1013  & 1013  & Not varied & Not varied \\
+			Vehicle width cab & mm    & 2495  & 2225  & 2600  & 89\%  & 104\% \\
+			Reference point height & mm    & 752   & 0     & 4600  & 0\%   & 612\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - truck tractor}
+		\label{table:vdp-range-prime-mover-tractor}
+
+% 				\begin{tablenotes}
+%         		\item[1]SAE up co-ordinate system and origin taken from centre of steer axle at ground level
+% 				\item[2] Measured from the centre of the rearmost axle in accordance with Regulation 226 (2)(c)
+% 				\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Wheelbase & mm    & 5285  & 4413  & 5892  & 84\%  & 111\% \\
+			\multicolumn{1}{l}{Axle spacing} & mm    & 1370  & 1200  & 1400  & 88\%  & 102\% \\
+			Hitch height & mm    & 500   & 300   & 918   & 60\%  & 184\% \\
+			Hitch longitudinal location & mm    & -7115  & -6558  & -7860  & 92\%  & 110\% \\
+			Prime mover sprung mass & kg    & 6698  & 4767  & 6698  & 71\%  & 100\% \\
+			Prime mover \gls{cgx} & mm    & -1860  & -1488  & -2232  & 80\%  & 120\% \\
+			Prime mover \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Prime mover \gls{cgz} & mm    & 1017  & 1000  & 1315  & 98\%  & 129\% \\
+			Prime mover \gls{rx} & m     & 0.76  & 0.532 & 0.988 & 70\%  & 130\% \\
+			Prime mover \gls{ry} & m     & 2.643 & 1.586 & 3.700 & 60\%  & 140\% \\
+			Prime mover \gls{rz} & m     & 2.643 & 1.586 & 3.700 & 60\%  & 140\% \\
+			Front overhang & mm    & 1365  & 1300  & 1820  & 95\%  & 133\% \\
+			Rear overhang & mm    & 1775  & 0     & 2546  & 0\%   & 143\% \\
+			Vehicle width (superstructure) & mm    & 2600  & 2400  & 2600  & 92\%  & 100\% \\
+			Vehicle width (cab) & mm    & 2495  & 2225  & 2600  & 89\%  & 104\% \\
+			Reference point height & mm    & 752   & 0     & 4600  & 0\%   & 612\% \\
+			Payload sprung mass & kg    & 15352 & 0     & 15352 & 0\%   & 100\% \\
+			Payload \gls{cgx} & mm    & -4490  & -4176  & -4804  & 93\%  & 107\% \\
+			Payload \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Payload \gls{cgz} & mm    & 2504  & 1122  & 2968  & 45\%  & 119\% \\
+			Payload \gls{rx} & m     & 1.488 & 0.744 & 2.232 & 50\%  & 150\% \\
+			Payload \gls{ry} & m     & 1.839 & 0.736 & 2.942 & 40\%  & 160\% \\
+			Payload \gls{rz} & m     & 1.860 & 0.744 & 2.976 & 40\%  & 160\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - rigid truck}
+		\label{table:vdp-range-prime-mover-rigid}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{cc}
+			\toprule
+			Engine speed (rpm) & Torque (Nm)\\
+			\midrule
+			600   & 1273 \\
+			621   & 1305 \\
+			688   & 1404 \\
+			749   & 1499 \\
+			810   & 1601 \\
+			856   & 1704 \\
+			901   & 1803 \\
+			929   & 1893 \\
+			965   & 1996 \\
+			996   & 2099 \\
+			1053  & 2201 \\
+			1394  & 2205 \\
+			1461  & 2095 \\
+			1540  & 1996 \\
+			1631  & 1897 \\
+			1714  & 1803 \\
+			1811  & 1700 \\
+			1860  & 1601 \\
+			1911  & 1499 \\
+			1951  & 1404 \\
+			1997  & 1301 \\
+			2033  & 1203 \\
+			2085  & 1100 \\
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Baseline engine torque curve}
+		\label{table:baseline-engine-torque-curve}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{ccc}
+			\toprule
+			Gear & Ratio & Efficiencies\\
+			\midrule
+			C     & 19.38 & 0.96 \\
+			1     & 14.94 & 0.96 \\
+			2     & 11.28 & 0.96 \\
+			3     & 9.04  & 0.96 \\
+			4     & 7.09  & 0.96 \\
+			5     & 5.54  & 0.96 \\
+			6     & 4.35  & 0.96 \\
+			7     & 3.44  & 0.96 \\
+			8     & 2.7   & 0.96 \\
+			9     & 2.08  & 0.96 \\
+			10    & 1.63  & 0.96 \\
+			11    & 1.27  & 0.96 \\
+			12    & 1     & 0.96 \\
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Baseline gearbox transmission data}
+		\label{table:baseline-gearbox-transmission-data}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{CCCCC}
+			\toprule
+			Differential ratio & Differential efficiency & Clutch engagement speed (rpm) & Clutch engagement torque (Nm) & Gear change speed (rpm)\\
+			\midrule
+			3.09  & 0.98  & 600   & 1103  & 1631 \\
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Baseline differential, clutch engagement and gear change speed}
+		\label{table:baseline-differential}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+
+
+\subsubsection{Trailer and Dolly Units}\label{section:vdp-range-trailers}
+
+The axle configuration on the \textbf{quad semi-trailer} is as follows:
+
+\begin{enumerate}
+	\item \textbf{Trailer:} Trailer axle with 445/65 R22.5 tyres (see Table~\ref{table:vdp-range-axle-trailer-445}).
+\end{enumerate}
+
+A detailed summary of the \glspl{vdp} and their evaluated range for the quad semi-trailer is presented in Table~\ref{table:vdp-range-trailer-quad-semi}.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Wheelbase & mm    & 10000 & 7975  & 10000 & 80\%  & 100\% \\
+			Axle spacing & mm    & 1360  & 1200  & 1850  & 88\%  & 136\% \\
+			Trailer sprung mass & kg    & 10410 & 2500  & 10410 & 24\%  & 100\% \\
+			Trailer \gls{cgx} & mm    & -6455  & -4519  & -8392  & 70\%  & 130\% \\
+			Trailer \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Trailer \gls{cgz} & mm    & 2025  & 1280  & 2025  & 63\%  & 100\% \\
+			Trailer \gls{rx} & m     & 1.588 & 0.873 & 2.303 & 55\%  & 145\% \\
+			Trailer \gls{ry} & m     & 4.641 & 2.321 & 6.962 & 50\%  & 150\% \\
+			Trailer \gls{rz} & m     & 4.685 & 2.343 & 7.028 & 50\%  & 150\% \\
+			Front overhang & mm & 900   & 0     & 1800  & 0\%   & 200\% \\
+			Rear overhang & mm & 1960  & 0     & 6000  & 0\%   & 306\% \\
+			Vehicle width & mm    & 2600  & 2400  & 2600  & 92\%  & 100\% \\
+			Reference point height & mm & 3800  & 0     & 4600  & 0\%   & 121\% \\
+			Payload sprung mass & kg    & 32000 & 0     & 32000 & 0\%   & 100\% \\
+			Payload \gls{cgx} & mm    & -6500  & -5755  & -7245  & 89\%  & 111\% \\
+			Payload \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Payload \gls{cgz} & mm    & 2025  & 1580  & 2841  & 78\%  & 140\% \\
+			Payload \gls{rx} & m     & 0.812 & 0.406 & 1.218 & 50\%  & 150\% \\
+			Payload \gls{ry} & m     & 4.368 & 1.747 & 6.989 & 40\%  & 160\% \\
+			Payload \gls{rz} & m     & 4.353 & 1.741 & 6.965 & 40\%  & 160\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - quad semi-trailer}
+		\label{table:vdp-range-trailer-quad-semi}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\newpage
+The axle configuration on the \textbf{tridem interlink leader and follower trailers} is as follows:
+
+\begin{enumerate}
+	\item \textbf{Trailer:} Trailer axle with 315/80 R22.5 tyres (see Table~\ref{table:vdp-range-axle-trailer-315})
+\end{enumerate}
+
+A detailed summary of the \glspl{vdp} and their evaluated range for the tridem interlink leader and follower trailer is presented in Tables~\ref{table:vdp-range-trailer-tridem-interlink-leader}~and~\ref{table:vdp-range-trailer-tridem-interlink-follower} respectively.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Wheelbase & mm & 7420  & 7060  & 7612  & 95\%  & 103\% \\
+			Axle spacing & mm    & 1360  & 1200  & 1850  & 88\%  & 136\% \\
+			Hitch height & mm    & 1278  & 1148  & 1350  & 90\%  & 106\% \\
+			Hitch longitudinal location & mm    & -8420  & -7925  & -8780  & 94\%  & 104\% \\
+			Trailer sprung mass & kg    & 4632  & 1855  & 4632  & 40\%  & 100\% \\
+			Trailer \gls{cgx} & mm    & -3656  & -2559  & -4753  & 70\%  & 130\% \\
+			Trailer \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Trailer \gls{cgz} & mm    & 1777  & 1280  & 2025  & 72\%  & 114\% \\
+			Trailer \gls{rx} & m     & 0.985 & 0.542 & 1.428 & 55\%  & 145\% \\
+			Trailer \gls{ry} & m     & 3.169 & 1.585 & 4.754 & 50\%  & 150\% \\
+			Trailer \gls{rz} & m     & 3.167 & 1.584 & 4.751 & 50\%  & 150\% \\
+			Front overhang & mm & 950   & 0     & 1800  & 0\%   & 189\% \\
+			Rear overhang & mm & -1790 & -1790 & -1283 & 100\% & 72\% \\
+			Vehicle width & mm    & 2600  & 2400  & 2600  & 92\%  & 100\% \\
+			Reference point height & mm    & 3198  & 0     & 4600  & 0\%   & 144\% \\
+			Payload sprung mass & kg    & 24615 & 0     & 24615 & 0\%   & 100\% \\
+			Payload \gls{cgx} & mm    & -3111  & -2714  & -3508  & 87\%  & 113\% \\
+			Payload \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Payload \gls{cgz} & mm    & 2375  & 1667  & 2473  & 70\%  & 104\% \\
+			Payload \gls{rx} & m     & 0.762 & 0.381 & 1.143 & 50\%  & 150\% \\
+			Payload \gls{ry} & m     & 2.211 & 0.884 & 3.538 & 40\%  & 160\% \\
+			Payload \gls{rz} & m     & 2.251 & 0.900 & 3.602 & 40\%  & 160\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - tridem interlink leader}
+		\label{table:vdp-range-trailer-tridem-interlink-leader}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Wheelbase & mm & 5950  & 4434  & 6404  & 75\%  & 108\% \\
+			Axle spacing & mm    & 1360  & 1200  & 1850  & 88\%  & 136\% \\
+			Trailer sprung mass & kg    & 4167  & 1488  & 4167  & 36\%  & 100\% \\
+			Trailer \gls{cgx} & mm    & -4269  & -2988  & -5550  & 70\%  & 130\% \\
+			Trailer \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Trailer \gls{cgz} & mm    & 1912  & 1280  & 2025  & 67\%  & 106\% \\
+			Trailer \gls{rx} & m     & 1.007 & 0.554 & 1.460 & 55\%  & 145\% \\
+			Trailer \gls{ry} & m     & 3.037 & 1.519 & 4.556 & 50\%  & 150\% \\
+			Trailer \gls{rz} & m     & 3.052 & 1.526 & 4.578 & 50\%  & 150\% \\
+			Front overhang & mm & -354  & -354  & 464   & 100\% & -131\% \\
+			Rear overhang & mm & 984   & 0     & 3570  & 0\%   & 363\% \\
+			Vehicle width & mm    & 2600  & 2400  & 2600  & 92\%  & 100\% \\
+			Reference point height & mm    & 4114  & 0     & 4600  & 0\%   & 112\% \\
+			Payload sprung mass & kg    & 24615 & 0     & 24615 & 0\%   & 100\% \\
+			Payload \gls{cgx} & mm    & -4403  & -4006  & -4800  & 91\%  & 109\% \\
+			Payload \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Payload \gls{cgz} & mm    & 2375  & 1667  & 2473  & 70\%  & 104\% \\
+			Payload \gls{rx} & m     & 0.762 & 0.381 & 1.143 & 50\%  & 150\% \\
+			Payload \gls{ry} & m     & 2.211 & 0.884 & 3.538 & 40\%  & 160\% \\
+			Payload \gls{rz} & m     & 2.251 & 0.900 & 3.602 & 40\%  & 160\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - tridem interlink follower}
+		\label{table:vdp-range-trailer-tridem-interlink-follower}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\newpage
+The axle configuration on the \textbf{rigid drawbar combination} is as follows:
+
+\begin{enumerate}
+	\item \textbf{Dolly:} Trailer axle with 285/70 R19.5 tyres (see Table~\ref{table:vdp-range-axle-trailer-285})
+	\item \textbf{Trailer:} Trailer axle with 285/70 R19.5 tyres (see Table~\ref{table:vdp-range-axle-trailer-285})
+\end{enumerate}
+
+A detailed summary of the \glspl{vdp} and their evaluated range for the rigid drawbar combination tridem semi-trailer and dolly is presented in Tables~\ref{table:vdp-range-trailer-rigid-combination-trailer}~and~\ref{table:vdp-range-trailer-rigid-combination-dolly} respectively.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Wheelbase & mm & 8255  & 6035  & 8881  & 73\%  & 108\% \\
+			Axle spacing & mm    & 1360  & 1200  & 1850  & 88\%  & 136\% \\
+			Trailer sprung mass & kg    & 3150  & 2064  & 3150  & 66\%  & 100\% \\
+			Trailer \gls{cgx} & mm    & -5575  & -3903  & -7248  & 70\%  & 130\% \\
+			Trailer \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Trailer \gls{cgz} & mm    & 1500  & 1280  & 2025  & 85\%  & 135\% \\
+			Trailer \gls{rx} & m     & 1.227 & 0.675 & 1.779 & 55\%  & 145\% \\
+			Trailer \gls{ry} & m     & 5.434 & 2.717 & 8.151 & 50\%  & 150\% \\
+			Trailer \gls{rz} & m     & 5.501 & 2.751 & 8.252 & 50\%  & 150\% \\
+			Front overhang & mm & 1760  & 0     & 1800  & 0\%   & 102\% \\
+			Rear overhang & mm & 1081  & 0     & 4953  & 0\%   & 458\% \\
+			Vehicle width & mm    & 2600  & 2400  & 2600  & 92\%  & 100\% \\
+			Reference point height & mm    & 3198  & 0     & 4600  & 0\%   & 144\% \\
+			Payload sprung mass & kg    & 34000 & 0     & 34000 & 0\%   & 100\% \\
+			Payload \gls{cgx} & mm    & -4702  & -4079  & -5325  & 87\%  & 113\% \\
+			Payload \gls{cgy} & mm    & 0     & -260  & 260   & 10\% of width & 10\% of width \\
+			Payload \gls{cgz} & mm    & 2575  & 1371  & 3012  & 53\%  & 117\% \\
+			Payload \gls{rx} & m     & 1.506 & 0.753 & 2.259 & 50\%  & 150\% \\
+			Payload \gls{ry} & m     & 3.656 & 1.462 & 5.850 & 40\%  & 160\% \\
+			Payload \gls{rz} & m     & 3.656 & 1.462 & 5.850 & 40\%  & 160\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - tridem semi-trailer}
+		\label{table:vdp-range-trailer-rigid-combination-trailer}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Wheelbase & mm    & 3590  & 2819  & 4841  & 79\%  & 135\% \\
+			Axle spacing & mm    & 1360  & 1200  & 1800  & 88\%  & 132\% \\
+			Hitch height & mm    & 1100  & 970   & 1350  & 88\%  & 123\% \\
+			Hitch longitudinal location & mm    & -3639  & -3385  & -3785  & 93\%  & 104\% \\
+			Dolly sprung mass & kg    & 453   & 400   & 453   & 88\%  & 100\% \\
+			Dolly \gls{cgx} & mm    & -3450  & -3105  & -3795  & 90\%  & 110\% \\
+			Dolly \gls{cgy} & mm    & 0     & 0     & 0     & Not varied & Not varied \\
+			Dolly \gls{cgz} & mm    & 868   & 868   & 1050  & 100\% & 121\% \\
+			Dolly \gls{rx} & m     & 0.515 & 0.412 & 0.618 & 80\%  & 120\% \\
+			Dolly \gls{ry} & m     & 0.818 & 0.573 & 1.063 & 70\%  & 130\% \\
+			Dolly \gls{rz} & m     & 0.959 & 0.671 & 1.247 & 70\%  & 130\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - rigid combination dolly}
+		\label{table:vdp-range-trailer-rigid-combination-dolly}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%      SUBSECTION
+%----------------------------------------------
+\subsection{Vehicle Design Parameters for Axles}\label{section:summary-of-axle-design-parameters}
+
+Tables~\ref{table:vdp-range-axle-steer-315}~to~\ref{table:vdp-range-axle-trailer-285} summarise the \glspl{vdp} for the baseline axles.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Axle track & mm    & 2109  & 1950  & 2282  & 92\%  & 108\% \\
+			Axle centre height & mm    & 507   & 447   & 567   & 88\%  & 112\% \\
+			Roll centre height & mm    & 21    & -20   & 100   & -95\% & 476\% \\
+			Roll steer coefficient & \degree{}/\degree{} & -0.087 & 0     & -0.2  & 0\%   & 230\% \\
+			Axle \gls{ixx}/\gls{izz}  & kg.m\sstw{} & 529   & 529   & 621   & 100\% & 117\% \\
+			Spin inertia for each side & kg.m\sstw{} & 2     & 2     & 20    & 100\% & 1000\% \\
+			Unsprung mass  & kg    & 750   & 544   & 800   & 67\%  & 107\% \\
+			Wheel centre height & mm    & 507   & 507   & 528   & 100\% & 104\% \\
+			Auxiliary roll stiffness  & Nm/\degree{} & 2950  & 1070  & 5009  & 36\%  & 170\% \\
+			Damper model & N-s/mm & 20    & 2.5   & 50    & 13\%  & 250\% \\
+			Damper track & mm    & 1150  & 780   & 1150  & 68\%  & 100\% \\
+			Jounce stop & mm    & 204   & 45    & 250   & 22\%  & 123\% \\
+			Rebound stop & mm    & -195  & -45   & -250  & 23\%  & 128\% \\
+			Spring vertical stiffness & N/mm  & 273   & 185   & 350   & 68\%  & 128\% \\
+			Spring track & mm    & 815   & 780   & 1150  & 96\%  & 141\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - steer axle with 315/80 R22.5 tyres (singles)}
+		\label{table:vdp-range-axle-steer-315}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Axle track & mm    & 1837  & 1800  & 1932  & 98\%  & 105\% \\
+			Axle centre height & mm    & 507   & 447   & 567   & 88\%  & 112\% \\
+			Roll centre height & mm    & 400   & -125  & 400   & -31\% & 100\% \\
+			Roll steer coefficient & \degree{}/\degree{} & 0     & 0.04  & -0.23 & -     & - \\
+			Axle \gls{ixx}/\gls{izz}  & kg.m\sstw{} & 619   & 619   & 712   & 100\% & 115\% \\
+			Spin inertia for each side & kg.m\sstw{} & 2     & 2     & 20    & 100\% & 1000\% \\
+			Unsprung mass  & kg    & 1300  & 1043   & 1350  & 69\%  & 104\% \\
+			Wheel centre height & mm    & 507   & 507   & 528   & 100\% & 104\% \\
+			Auxiliary roll stiffness  & Nm/\degree{} & 7487  & 790   & 12689 & 11\%  & 169\% \\
+			Damper model & N-s/mm & 20    & 2.5   & 50    & 13\%  & 250\% \\
+			Damper track & mm    & 1000  & 670   & 1100  & 67\%  & 110\% \\
+			Jounce stop & mm    & 250   & 45    & 250   & 18\%  & 100\% \\
+			Rebound stop & mm    & -250  & -45   & -250  & 18\%  & 100\% \\
+			Spring vertical stiffness & \%\tnote{1}  & 100\% & 42\%  & 126\% & 42\%  & 126\% \\
+			Spring track & mm    & 755   & 670   & 1100  & 89\%  & 146\% \\
+
+			\bottomrule
+
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - drive axle with 315/80 R22.5 tyres (duals)}
+		\label{table:vdp-range-axle-drive-315}
+
+		\begin{tablenotes}
+			\item[1] Spring vertical stiffness response scaled as a percentage of the baseline spring response
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Axle track & mm    & 2140  & 2000  & 2178  & 93\%  & 102\% \\
+			Axle centre height & mm    & 534   & 474   & 594   & 89\%  & 111\% \\
+			Roll centre height & mm    & 114   & -125  & 200   & -110\% & 175\% \\
+			Roll steer coefficient & \degree{}/\degree{} & -0.035 & 0.04  & -0.23 & -114\% & 657\% \\
+			Axle \gls{ixx}/\gls{izz}  & kg.m\sstw{} & 474   & 474   & 562   & 100\% & 119\% \\
+			Spin inertia for each side & kg.m\sstw{} & 2     & 2     & 20    & 100\% & 1000\% \\
+			Unsprung mass  & kg    & 760   & 545   & 800   & 71\%  & 125\% \\
+			Wheel centre height & mm    & 534   & 534   & 561   & 100\% & 105\% \\
+			Auxiliary roll stiffness  & Nm/\degree{} & 24700 & 2260  & 35954 & 9\%   & 146\% \\
+			Damper model & N-s/mm & 20    & 2.5   & 50    & 13\%  & 250\% \\
+			Damper track & mm    & 1080  & 780   & 1500  & 72\%  & 139\% \\
+			Jounce stop & mm    & 250   & 45    & 250   & 18\%  & 100\% \\
+			Rebound stop & mm    & -250  & -45   & -250  & 18\%  & 100\% \\
+			Spring vertical stiffness & \%\tnote{1}  & 100\% & 62\%  & 186\% & 62\%  & 186\% \\
+			Spring track & mm    & 1300  & 780   & 1500  & 60\%  & 115\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - trailer axle with 445/65 R22.5 tyres (singles)}
+		\label{table:vdp-range-axle-trailer-445}
+
+		\begin{tablenotes}
+			\item[1] Spring vertical stiffness response scaled as a percentage of the baseline spring response
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Axle track & mm    & 1920  & 1820  & 1982  & 95\%  & 103\% \\
+			Axle centre height & mm    & 507   & 447   & 567   & 88\%  & 112\% \\
+			Roll centre height & mm    & 114   & -125  & 200   & -110\% & 175\% \\
+			Roll steer coefficient & \degree{}/\degree{} & -0.156 & 0.04  & -0.23 & -26\% & 147\% \\
+			Axle \gls{ixx}/\gls{izz}  & kg.m\sstw{} & 562   & 562   & 666   & 100\% & 118\% \\
+			Spin inertia for each side & kg.m\sstw{} & 2     & 2     & 20    & 100\% & 1000\% \\
+			Unsprung mass  & kg    & 900   & 667   & 1000  & 89\%  & 111\% \\
+			Wheel centre height & mm    & 507   & 507   & 528   & 100\% & 104\% \\
+			Auxiliary roll stiffness  & Nm/\degree{} & 24700 & 2260  & 35954 & 9\%   & 146\% \\
+			Damper model & N-s/mm & 20    & 2.5   & 50    & 13\%  & 250\% \\
+			Damper track & mm    & 760   & 670   & 1200  & 88\%  & 158\% \\
+			Jounce stop & mm    & 250   & 45    & 250   & 18\%  & 100\% \\
+			Rebound stop & mm    & -250  & -45   & -250  & 18\%  & 100\% \\
+			Spring vertical stiffness & \%\tnote{1}  & 100\% & 62\%  & 186\% & 62\%  & 186\% \\
+			Spring track & mm    & 1000  & 670   & 1200  & 67\%  & 120\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - trailer axle with 315/80 R22.5 tyres (duals)}
+		\label{table:vdp-range-axle-trailer-315}
+
+		\begin{tablenotes}
+			\item[1] Spring vertical stiffness response scaled as a percentage of the baseline spring response
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Axle track & mm    & 2040  & 1830  & 2042  & 90\%  & 100\% \\
+			Axle centre height & mm    & 413   & 353   & 473   & 85\%  & 115\% \\
+			Roll centre height & mm    & 114   & -125  & 200   & -110\% & 175\% \\
+			Roll steer coefficient & \degree{}/\degree{} & -0.156 & 0.04  & -0.23 & -26\% & 147\% \\
+			Axle \gls{ixx}/\gls{izz}  & kg.m\sstw{} & 472   & 472   & 560   & 100\% & 119\% \\
+			Spin inertia for each side & kg.m\sstw{} & 2     & 2     & 20    & 100\% & 1000\% \\
+			Unsprung mass  & kg    & 757   & 530   & 850   & 70\%  & 112\% \\
+			Wheel centre height & mm    & 413   & 413   & 434   & 100\% & 105\% \\
+			Auxiliary roll stiffness  & Nm/\degree{} & 24700 & 2260  & 35954 & 9\%   & 146\% \\
+			Damper model & N-s/mm & 20    & 2.5   & 50    & 13\%  & 250\% \\
+			Damper track & mm    & 760   & 670   & 1200  & 88\%  & 158\% \\
+			Jounce stop & mm    & 250   & 45    & 250   & 18\%  & 100\% \\
+			Rebound stop & mm    & -250  & -45   & -250  & 18\%  & 100\% \\
+			Spring vertical stiffness & \%\tnote{1}  & 100\% & 62\%  & 186\% & 62\%  & 186\% \\
+			Spring track & mm    & 1000  & 670   & 1200  & 67\%  & 120\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - trailer axle with 285/70 R19.5 tyres (duals)}
+		\label{table:vdp-range-axle-trailer-285}
+
+		\begin{tablenotes}
+			\item[1] Spring vertical stiffness response scaled as a percentage of the baseline spring response
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\newpage
+%      SUBSECTION
+%----------------------------------------------
+\subsection{Vehicle Design Parameters for Tyres}\label{section:summary-of-tyre-design-parameters}
+
+Tables~\ref{table:vdp-tyre-445}~to~\ref{table:vdp-tyre-285} summarise the \glspl{vdp} for each of the baseline tyre models.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Effective rolling radius & mm    & 555   & 552   & 575   & 99\%  & 104\% \\
+			$L$ for $F_x$  & mm     & 55    & 55    & 55    & 100\% & 100\% \\
+			$L$ for $F_y$ \& $M_z$ & mm     & 1100  & 100     & 1100  & 0\%   & 100\% \\
+			Tyre cornering stiffness & \%    & 100   & 100   & 173   & 100\% & 173\% \\
+			Tyre spring rate & N/mm  & 1193  & 773   & 1237  & 65\%  & 104\% \\
+			Unloaded radius & mm    & 587   & 575   & 589   & 98\%  & 100\% \\
+			Wheel assembly spin moment of inertia & kg.m\sstw{} & 28    & 14    & 28    & 50\%  & 100\% \\
+			Dual tyre spacing & -     & -     & -     & -     & -     & - \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - 445/65 R22.5 tyres}
+		\label{table:vdp-tyre-445}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Effective rolling radius & mm    & 522   & 515   & 537   & 99\%  & 103\% \\
+			$L$ for $F_x$ & mm     & 50    & 50    & 50    & 100\% & 100\% \\
+			$L$ for $F_y$ \& $M_z$ & mm     & 1000  & 100     & 1000  & 0\%   & 100\% \\
+			Cornering stiffness & \%    & 100   & 100   & 180   & 100\% & 180\% \\
+			Tyre spring rate & N/mm  & 987   & 565   & 1169  & 57\%  & 118\% \\
+			Unloaded radius & mm    & 548   & 538   & 550   & 98\%  & 100\% \\
+			Wheel assembly spin moment of inertia & kg.m\sstw{} & 12    & 7     & 14    & 58\%  & 117\% \\
+			Dual tyre spacing & mm    & 350   & 350   & 355   & 100\% & 101\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - 315/80 R22.5 tyres}
+		\label{table:vdp-tyre-315}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{Parameter} & \textbf{Unit} & \textbf{Baseline} & \textbf{Min.} & \textbf{Max.} & \textbf{Min. (\%)} & \textbf{Max. (\%)} \\
+
+			\midrule
+			Effective rolling radius & mm    & 434   & 429   & 447   & 99\%  & 103\% \\
+			$L$ for $F_x$ & mm     & 45    & 45    & 45    & 100\% & 100\% \\
+			$L$ for $F_y$ \& $M_z$ & mm     & 900   & 1     & 900   & 0\%   & 100\% \\
+			Cornering stiffness & \%    & 100   & 100   & 135   & 100\% & 135\% \\
+			Tyre spring rate & N/mm  & 801   & 473   & 901   & 59\%  & 113\% \\
+			Unloaded radius & mm    & 456   & 448   & 456   & 98\%  & 100\% \\
+			Wheel assembly spin moment of inertia & kg.m\sstw{} & 10    & 6.5   & 13    & 65\%  & 130\% \\
+			Dual tyre spacing & mm    & 314   & 314   & 319   & 100\% & 102\% \\
+
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Vehicle design parameters - 285/70 R19.5 tyres}
+		\label{table:vdp-tyre-285}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%==============================================
+%      SECTION
+%==============================================
+\section{Baseline Vehicle \trucksim{} Datasets}\label{section:baseline-trucksim-datasets}
+
+The Sections that follow include the \trucksim{} datasets used for the baseline vehicle models.
+
+%      SUBSECTION
+%----------------------------------------------
+\subsection{Control Parameters}\label{section:control-parameters}
+
+The control parameters used for the lane change and pulse steer manoeuvre discussed in Section~\ref{section:discussion-limitations-control-parameters} are summarised in Table~\ref{table:baseline-manoeuvre-control-parameters}.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+% Table generated by Excel2LaTeX from sheet 'Baseline tsim datasets'
+\begin{table}[H]
+  \centering\footnotesize
+  \caption{\trucksim{} control parameters for PBS manoeuvres}
+    \begin{tabular}{lcc}
+    \toprule
+    \textbf{Baseline combination} & \textbf{\texttt{TPREV\_CONSTANT}} & \textbf{\texttt{STEER\_SW\_GAIN}} \\
+    \midrule
+    Quad semi-trailer & 0.3 & 105 \\
+    Tridem interlink & 0.3 & 105 \\
+    Rigid drawbar combination & 0.125 & 180 \\
+    \bottomrule
+    \end{tabular}%
+  \label{table:baseline-manoeuvre-control-parameters}%
+\end{table}%
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%      SUBSECTION
+%----------------------------------------------
+\subsection{Spring Datasets}\label{section:baseline-spring-datasets}
+
+ The air spring behaviour was linearised from measured performance as supplied by \glspl{oem} and simplified to have the same stiffness in loading and unloading.
+
+ \trucksim{} assumes the spring is mounted vertically above the axle, all spring datasets included in this Section have transformed the measured spring response as if it were mounted vertically above the axle.
+ 
+The spring response per baseline drive axle transformed as if mounted vertically above the axle is included in Table~\ref{table:baseline-drive-axle-spring-response}.
+
+The trailer axle spring dataset transformed as if mounted vertically above the axle is included in Table~\ref{table:baseline-trailer-axle-spring-response}.
+
+%----------------------------------------------
+%      TABLE - used non-extended dataset in place of the extended dataset since it had a negative response for a 2935 N load. The response of the extended and non-extended spring model is negligible. The model was linearised as well, so the negative response should not have any effect, however it may just look incorrect at a glance if not familiar with Trucksim
+%----------------------------------------------
+% Table generated by Excel2LaTeX from sheet 'Baseline tsim datasets'
+\begin{table}[H]
+  \centering\footnotesize
+  \caption{Baseline spring dataset for drive axles}
+    \begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multicolumn{1}{|l|}{\textbf{Vertical load (N) ->}} & 2935 & 8856 & 14906 & 21033 & 27160 \bigstrut\\
+			\hline
+			\multicolumn{1}{|l|}{\textbf{Compression (mm)}} & \multicolumn{5}{c|}{\textbf{Force during loading \& unloading (N)}} \bigstrut\\
+			\hline
+			-40 & 784 & 4753 & 8944 & 13299 & 17640 \bigstrut\\
+			\hline
+			40 & 5085 & 12959 & 20868 & 28767 & 36679 \bigstrut\\
+			\hline
+    \end{tabular}%
+  \label{table:baseline-drive-axle-spring-response}%
+\end{table}%
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+% Table generated by Excel2LaTeX from sheet 'Baseline tsim datasets'
+\begin{table}[H]
+  \centering\footnotesize
+  \caption{Baseline spring dataset for trailer axles}
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Vertical load (N) ->}} & 3195 & 6636 & 20462 & 34535 & 47932 \bigstrut\\
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Compression (mm)}} & \multicolumn{5}{c|}{\textbf{Force during loading \& unloading (N)}} \bigstrut\\
+    \hline
+    -45 & 345 & 2557 & 12145 & 22406 & 32239 \bigstrut\\
+    \hline
+    45 & 9980 & 15388 & 36405 & 57729 & 77332 \bigstrut\\
+    \hline
+    \end{tabular}%
+  \label{table:baseline-trailer-axle-spring-response}%
+\end{table}%
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%      SUBSECTION
+%----------------------------------------------
+\subsection{Tyre Datasets}\label{section:baseline-tyre-datasets}
+
+The datasets used to define the properties of the baseline tyres are included in the Sections that follow.
+
+%      SUBSUBSECTION
+%----------------------------------------------
+\subsubsection{Lateral Tyre Force}\label{section:lateral-tyre-force-trucksim-datasets}
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+% Table generated by Excel2LaTeX from sheet 'Baseline tsim datasets'
+\begin{table}[H]
+	\centering\footnotesize
+	\caption{Lateral tyre force dataset for the baseline 285/70 R19.5 tyre}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{Vertical load (N) ->} & 8896 & 17793 & 26689 & 35586 \bigstrut \\
+		\hline
+		\textbf{Slip angle (\degree{})} & \multicolumn{4}{c|}{\textbf{Lateral tyre force (N)}} \bigstrut\\
+		\hline
+		1                             & 1432 & 2588  & 3306  & 3664 \bigstrut  \\
+		\hline
+		2                             & 2532 & 4821  & 6475  & 7513 \bigstrut  \\
+		\hline
+		4                             & 4397 & 8511  & 11699 & 13851 \bigstrut \\
+		\hline
+		8                             & 6851 & 12813 & 17575 & 20871 \bigstrut \\
+		\hline
+		12                            & 7868 & 14763 & 19906 & 24016 \bigstrut \\
+		\hline
+	\end{tabular}%
+	\label{table:baseline-lateral-tyre-force-dataset-285-70-22.5}%
+\end{table}%
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+% Table generated by Excel2LaTeX from sheet 'Baseline tsim datasets'
+\begin{table}[H]
+  \centering\footnotesize
+  \caption{Lateral tyre force dataset for the baseline 315/80 R22.5 tyre}
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{Vertical load (N) ->} & 8896 & 17793 & 26689 & 35586 \bigstrut\\
+    \hline
+    \textbf{Slip angle (\degree{})} & \multicolumn{4}{c|}{\textbf{Lateral tyre force (N)}} \bigstrut\\
+    \hline
+    1 & 1353 & 2266 & 2924 & 3307 \bigstrut\\
+    \hline
+    2 & 2227 & 3947 & 5158 & 5919 \bigstrut\\
+    \hline
+    4 & 3761 & 6888 & 9135 & 10591 \bigstrut\\
+    \hline
+    8 & 5865 & 10754 & 14487 & 17117 \bigstrut\\
+    \hline
+    12 & 6594 & 12522 & 17192 & 20916 \bigstrut\\
+    \hline
+    \end{tabular}%
+  \label{table:baseline-lateral-tyre-force-dataset-315-80-R22.5}
+\end{table}%
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+% Table generated by Excel2LaTeX from sheet 'Baseline tsim datasets'
+\begin{table}[H]
+	\centering\footnotesize
+	\caption{Lateral tyre force dataset for the baseline 445/65 R22.5 tyre}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{Vertical load (N) ->} & 17828 & 35519 & 53210 & 66483 \bigstrut \\
+		\hline
+		\textbf{Slip angle (\degree{})} & \multicolumn{4}{c|}{\textbf{Lateral tyre force (N)}} \bigstrut\\
+		\hline
+		1                             & 1976  & 3840  & 5678  & 6753 \bigstrut  \\
+		\hline
+		2                             & 3712  & 7551  & 11227 & 13573 \bigstrut \\
+		\hline
+		4                             & 6662  & 13602 & 20287 & 24946 \bigstrut \\
+		\hline
+		8                             & 11477 & 22473 & 32627 & 39425 \bigstrut \\
+		\hline
+		12                            & 14641 & 27744 & 39038 & 46745 \bigstrut \\
+		\hline
+	\end{tabular}%
+	\label{table:baseline-lateral-tyre-force-dataset-445-65-R22.5}
+\end{table}%
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%      SUBSUBSECTION
+%----------------------------------------------
+\subsubsection{Longitudinal Tyre Force}\label{section:longitudinal-tyre-force-trucksim-datasets}
+
+The longitudinal properties of the baseline tyres were defined with Standard \trucksim{} datasets as per Tables~\ref{table:long-tyre-force-fx-3500-kg}~to~\ref{table:long-tyre-force-fx-3000-kg}.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{|c|c|c|c|c|c|}
+			\hline
+\textbf{Vertical load (N) ->} & 8584 & 17168 & 34335 & 51503 & 68670 \bigstrut\\
+\hline
+\textbf{Absolute slip ratio (kappa) (-)} & \multicolumn{5}{c|}{\textbf{Longitudinal tyre force (N)}} \bigstrut\\
+\hline
+0.025 & 2656.1 & 5122.4 & 9485.9 & 13090.6 & 16126.1 \bigstrut\\
+\hline
+0.050 & 4756 & 9172.4 & 16985.9 & 23440.5 & 28876 \bigstrut\\
+\hline
+0.075 & 6140.8 & 11843 & 21931.5 & 30265.4 & 37283.5 \bigstrut\\
+\hline
+0.100 & 6952.5 & 13408.4 & 24830.3 & 34265.8 & 42211.6 \bigstrut\\
+\hline
+0.125 & 7389.9 & 14252 & 26392.6 & 36421.8 & 44867.4 \bigstrut\\
+\hline
+0.150 & 7602.3 & 14661.7 & 27151.2 & 37468.7 & 46157.1 \bigstrut\\
+\hline
+0.175 & 7682.5 & 14816.3 & 27437.5 & 37863.8 & 46643.8 \bigstrut\\
+\hline
+0.200 & 7684.8 & 14820.7 & 27445.8 & 37875.2 & 46657.8 \bigstrut\\
+\hline
+0.225 & 7640.9 & 14736 & 27288.9 & 37658.6 & 46391.1 \bigstrut\\
+\hline
+0.250 & 7569.4 & 14598 & 27033.4 & 37306.1 & 45956.8 \bigstrut\\
+\hline
+0.300 & 7384.3 & 14241.2 & 26372.5 & 36394.1 & 44833.3 \bigstrut\\
+\hline
+0.350 & 7177.9 & 13843.1 & 25635.4 & 35376.9 & 43580.2 \bigstrut\\
+\hline
+0.400 & 6969.9 & 13441.9 & 24892.5 & 34351.6 & 42317.2 \bigstrut\\
+\hline
+0.450 & 6768.6 & 13053.7 & 24173.6 & 33359.6 & 41095.1 \bigstrut\\
+\hline
+0.500 & 6577.6 & 12685.3 & 23491.3 & 32418 & 39935.3 \bigstrut\\
+\hline
+0.550 & 6398 & 12339 & 22850 & 31533 & 38845 \bigstrut\\
+\hline
+0.600 & 6230 & 12015.1 & 22250.1 & 30705.2 & 37825.2 \bigstrut\\
+\hline
+0.650 & 6073.3 & 11712.7 & 21690.3 & 29932.6 & 36873.4 \bigstrut\\
+\hline
+0.700 & 5927.1 & 11430.8 & 21168.2 & 29212.1 & 35985.9 \bigstrut\\
+\hline
+0.750 & 5790.7 & 11167.9 & 20681.2 & 28540.1 & 35158.1 \bigstrut\\
+\hline
+0.800 & 5663.5 & 10922.4 & 20226.7 & 27912.9 & 34385.5 \bigstrut\\
+\hline
+0.850 & 5544.6 & 10693.2 & 19802.2 & 27327 & 33663.7 \bigstrut\\
+\hline
+0.900 & 5433.4 & 10478.7 & 19405 & 26778.9 & 32988.5 \bigstrut\\
+\hline
+0.950 & 5329.2 & 10277.8 & 19033 & 26265.5 & 32356 \bigstrut\\
+\hline
+1.000 & 5329.2 & 10277.8 & 19033 & 26265.5 & 32356 \bigstrut\\
+\hline
+
+		\end{tabulary}
+
+		\caption{Longitudinal tyre force dataset for baseline 445/65 R22.5 \& 315/80 R22.5 tyres \tnote{1}}
+		\label{table:long-tyre-force-fx-3500-kg}
+
+		\begin{tablenotes}
+		\item[1] Standard \trucksim{} Model \textit{Fx: 3500 kg Load Rating}
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{|c|c|c|c|c|c|}
+    \hline
+    \textbf{Vertical load (N) ->} & 7358 & 14715 & 29430 & 44145 & 58860 \bigstrut\\
+    \hline
+    \textbf{Absolute slip ratio (kappa) (-)} & \multicolumn{5}{c|}{\textbf{Longitudinal tyre force (N)}} \bigstrut\\
+    \hline
+    0.025 & 2276.6 & 4390.6 & 8130.8 & 11220.5 & 13822.4 \bigstrut\\
+    \hline
+    0.050 & 4076.6 & 7862 & 14559.3 & 20091.9 & 24750.8 \bigstrut\\
+    \hline
+    0.075 & 5263.6 & 10151.1 & 18798.4 & 25941.8 & 31957.3 \bigstrut\\
+    \hline
+    0.100 & 5959.3 & 11492.9 & 21283.1 & 29370.7 & 36181.3 \bigstrut\\
+    \hline
+    0.125 & 6334.2 & 12216 & 22622.2 & 31218.7 & 38457.8 \bigstrut\\
+    \hline
+    0.150 & 6516.3 & 12567.1 & 23272.5 & 32116 & 39563.2 \bigstrut\\
+    \hline
+    0.175 & 6585 & 12699.7 & 23517.9 & 32454.7 & 39980.4 \bigstrut\\
+    \hline
+    0.200 & 6587 & 12703.5 & 23525 & 32464.4 & 39992.4 \bigstrut\\
+    \hline
+    0.225 & 6549.3 & 12630.8 & 23390.5 & 32278.8 & 39763.8 \bigstrut\\
+    \hline
+    0.250 & 6488 & 12512.6 & 23171.5 & 31976.6 & 39391.5 \bigstrut\\
+    \hline
+    0.300 & 6329.4 & 12206.7 & 22605 & 31194.9 & 38428.5 \bigstrut\\
+    \hline
+    0.350 & 6152.5 & 11865.5 & 21973.2 & 30323 & 37354.5 \bigstrut\\
+    \hline
+    0.400 & 5974.2 & 11521.7 & 21336.4 & 29444.2 & 36271.9 \bigstrut\\
+    \hline
+    0.450 & 5801.7 & 11188.9 & 20720.2 & 28593.9 & 35224.4 \bigstrut\\
+    \hline
+    0.500 & 5637.9 & 10873.1 & 20135.4 & 27786.9 & 34230.2 \bigstrut\\
+    \hline
+    0.550 & 5484 & 10576.3 & 19585.7 & 27028.3 & 33295.7 \bigstrut\\
+    \hline
+    0.600 & 5340 & 10298.6 & 19071.5 & 26318.7 & 32421.6 \bigstrut\\
+    \hline
+    0.650 & 5205.7 & 10039.5 & 18591.7 & 25656.5 & 31605.8 \bigstrut\\
+    \hline
+    0.700 & 5080.4 & 9797.8 & 18144.1 & 25038.9 & 30845 \bigstrut\\
+    \hline
+    0.750 & 4963.5 & 9572.4 & 17726.8 & 24462.9 & 30135.5 \bigstrut\\
+    \hline
+    0.800 & 4854.4 & 9362.1 & 17337.2 & 23925.4 & 29473.3 \bigstrut\\
+    \hline
+    0.850 & 4752.5 & 9165.6 & 16973.3 & 23423.1 & 28854.6 \bigstrut\\
+    \hline
+    0.900 & 4657.2 & 8981.7 & 16632.8 & 22953.3 & 28275.8 \bigstrut\\
+    \hline
+    0.950 & 4567.9 & 8809.5 & 16314 & 22513.3 & 27733.7 \bigstrut\\
+    \hline
+    1.000 & 4567.9 & 8809.5 & 16314 & 22513.3 & 27733.7 \bigstrut\\
+    \hline
+		\end{tabulary}
+
+		\caption{Longitudinal tyre force dataset for baseline 285/70 R19.5 tyres\tnote{1}}
+		\label{table:long-tyre-force-fx-3000-kg}
+
+		\begin{tablenotes}
+		\item[1] Standard \trucksim{} Model \textit{Fx: 3000 kg Load Rating}
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%      SUBSUBSECTION
+%----------------------------------------------
+\subsubsection{Aligning Moment}\label{section:aligning-moment-tyre-force-trucksim-datasets}
+
+The aligning moment properties of the baseline tyres were defined with Standard \trucksim{} datasets as per Tables~\ref{table:align-moment-mz-3500-kg}~to~\ref{table:align-moment-mz-3000-kg}.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{|c|c|c|c|c|c|}
+
+		\hline
+		\textbf{Vertical load (N) ->} & 8584 & 17168 & 34335 & 51503 & 68670 \bigstrut\\
+		\hline
+		\textbf{Absolute slip angle (\degree{})} & \multicolumn{5}{c|}{\textbf{Aligning moment (N-m)}} \bigstrut\\
+		\hline
+		1 & 41.5 & 101.7 & 274.8 & 511.1 & 814.9 \bigstrut\\
+		\hline
+		2 & 75.6 & 185.4 & 499.5 & 929.6 & 1484.2 \bigstrut\\
+		\hline
+		4 & 117.8 & 288.9 & 773.5 & 1441.7 & 2309.8 \bigstrut\\
+		\hline
+		6 & 128.2 & 313.9 & 833.3 & 1556.2 & 2505.3 \bigstrut\\
+		\hline
+		8 & 116.9 & 285.7 & 749.4 & 1403.6 & 2275.4 \bigstrut\\
+		\hline
+		10 & 94.5 & 230.3 & 592.2 & 1114.3 & 1827.0 \bigstrut\\
+		\hline
+		12 & 67.7 & 164.1 & 406.7 & 772.1 & 1292.9 \bigstrut\\
+		\hline
+		15 & 26.2 & 61.8 & 121.3 & 245.3 & 468.2 \bigstrut\\
+		\hline
+		20 & 0 & 0 & 0 & 0 & 0 \bigstrut\\
+		\hline
+		90 & 0 & 0 & 0 & 0 & 0 \bigstrut\\
+		\hline
+
+		\end{tabulary}
+
+		\caption{Aligning moment dataset for baseline 445/65 R22.5 \& 315/80 R22.5 tyres \tnote{1}}
+		\label{table:align-moment-mz-3500-kg}
+
+		\begin{tablenotes}
+		\item[1] Standard \trucksim{} Model \textit{Mz: 3500 kg Load Rated Tire}
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{|c|c|c|c|c|c|}
+
+			\hline
+			\textbf{Vertical load (N) ->} & 4905 & 9810 & 19620 & 29430 & 39240 \bigstrut\\
+			\hline
+			\textbf{Absolute slip angle (\degree{})} & \multicolumn{5}{c|}{\textbf{Aligning moment (N-m)}} \bigstrut\\
+			\hline
+			1 & 35.0 & 85.9 & 231.9 & 431.5 & 687.9 \bigstrut\\
+			\hline
+			2 & 63.8 & 156.5 & 421.6 & 784.8 & 1252.9 \bigstrut\\
+			\hline
+			4 & 99.5 & 243.9 & 653.0 & 1217.0 & 1949.8 \bigstrut\\
+			\hline
+			6 & 108.2 & 265.0 & 703.5 & 1313.7 & 2114.8 \bigstrut\\
+			\hline
+			8 & 98.7 & 241.2 & 632.6 & 1184.8 & 1920.8 \bigstrut\\
+			\hline
+			10 & 79.8 & 194.4 & 499.9 & 940.6 & 1542.3 \bigstrut\\
+			\hline
+			12 & 57.1 & 138.5 & 343.3 & 651.8 & 1091.5 \bigstrut\\
+			\hline
+			15 & 22.1 & 52.1 & 102.4 & 207.0 & 395.3 \bigstrut\\
+			\hline
+			20 & 0 & 0 & 0 & 0 & 0 \bigstrut\\
+			\hline
+			90 & 0 & 0 & 0 & 0 & 0 \bigstrut\\
+			\hline	
+
+		\end{tabulary}
+
+		\caption{Aligning moment dataset for baseline 285/70 R19.5 tyres\tnote{1}}
+		\label{table:align-moment-mz-3000-kg}
+
+		\begin{tablenotes}
+			\item[1] Standard \trucksim{} Model \textit{Mz: 3000 kg Load Rated Tire}
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------

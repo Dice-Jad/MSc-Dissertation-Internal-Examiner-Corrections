@@ -1,0 +1,52 @@
+%--------------------------------------------------------------------------------------
+%      PAGE GEOMETRY
+%--------------------------------------------------------------------------------------
+\geometry{
+a4paper,
+total={155mm, 242mm},
+left=21mm,
+top=21mm,
+}
+%--------------------------------------------------------------------------------------
+%      TITLE PAGE
+%--------------------------------------------------------------------------------------
+\def\maketitle{\begin{titlepage}
+\hyphenpenalty=10000       % Absolutely no hyphenation breaks
+\vspace*{150\p@}
+{\Huge\bf \centering \@title \par}	%Inserts title
+\vspace*{30pt}
+%Insert author data  if defined and required
+{\Large\bf \centering \@AuthorN \par}
+\vspace*{\fill}
+A dissertation submitted to the Faculty of \@faculty,
+\@university, in fulfilment of the
+requirements for the degree of Master of Science in Engineering.\par
+\vspace*{2em}
+\@thesisplace, \@thesisyear
+\vspace*{150\p@}
+\end{titlepage}
+
+%--------------------------------------------------------------------------------------
+%      DECLARATION
+%--------------------------------------------------------------------------------------
+%Declaration page header item
+\vspace*{50\p@}
+
+{\parindent \z@ \raggedright
+\LARGE \bf  %**** was huge
+Declaration\par
+\nobreak
+\vskip 40\p@}
+
+\addcontentsline{toc}{chapter}{Declaration}
+
+%Declaration body text
+I declare that this dissertation is my own, unaided work, except where otherwise acknowledged. It is being submitted for the degree of Master of Science in Engineering in the \@university. It has not been submitted before for any degree or examination at any other university.
+
+\vspace*{\fill}
+\raggedright Signed this \day@english~day of \month@english~\the\year\par
+\vspace*{0.8cm}\rule{6cm}{0.4pt}\par
+\@AuthorN~\par
+\vspace*{10pt}
+\newpage
+}

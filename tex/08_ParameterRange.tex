@@ -2389,14 +2389,16 @@ It was assumed that the above data are for steel rims. Thus, considering alumini
 %----------------------------------------------
 
 \subsection{Tyre Lag (relaxation length)}\label{section:pr-tyre-lag}
-The tyre lag (also known as relaxation length) was set to a negligible value for the steer tyres to maintain stability of the driver model. \trucksim{} indicates that reasonable estimates of  tyre lag are as follows:
+Literature defining truck tyre lag (also known as relaxation length) ranges could not be found, however\trucksim{} indicates that reasonable estimates of  tyre lag are as follows:
 
 \begin{itemize}
 	\item \gls{lagfx} (longitudinal tyre lag): 1/10 of the tyre radius
 	\item \gls{lagfymz} (lateral tyre lag): Twice the tyre radius
 \end{itemize}
 
-When tyre lag is set to absolute zero, the driver model is unstable. To simulate zero tyre lag (on all but the steer tyres - see footnote \textsuperscript{1} in Table~\ref{table:parameter-range-tyre-lag}) without causing instabilities in the driver model, resulting in erroneous vehicle performance, the following settings were used.
+The NTC standards and vehicle assessment rules for the PBS framework \cite{NationalTransportCommission2008} do not clearly state whether the simulated vehicle performance should include the effects of tyre lag. Thus tyre lag was varied from the recommended value down to values that would effectively simulate zero tyre lag to evaluate the impact of including the effects of tyre lag in the vehicle simulations.
+
+When tyre lag is set to absolute zero, the driver model is unstable. To simulate zero tyre lag (on all but the steer tyres - see footnote \textsuperscript{1} in Table~\ref{table:parameter-range-tyre-lag}) without causing instabilities in the driver model, resulting in erroneous vehicle performance, the following parameters were used.
 
 \begin{itemize}
 	\item \gls{lagfx}: remains at approximately 1/10 of the tyre radius

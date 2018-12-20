@@ -1,45 +1,60 @@
 \chapter{Methodology}\label{chapter:methodology}
-
-% \begin{rawidea}
-% The vehicle parameter ranges were considered as variations to the baseline combination. While some OEM limitations may not allow for certain ranges of a parameter, there is a possibility that with new technologies and manufacturing modularity that such variations may become available. Thus it is important to note what can be changed as a whole for the combination that is being looked at when attempting to optimise the design.
-% \end{rawidea}
-
-% \begin{rawidea}
-% To simplify the geometry, the dimensions of the baselines in the case of overhangs were assumed as boxes. This is generally true of trailer structures, however the prime movers are more stylistic and rounded. Thus narrower values for overall width of the prime mover were investigated.
-% \end{rawidea}
-
-% \begin{rawidea}
-% The rear overhang reported was with respect to the last axle in the axle group to align with the definition from the \gls{nrta} for maximum rear overhang.
-% \end{rawidea}
-
-% \begin{rawidea}
-% Each parameter was altered in isolation, thus the interaction with the other baseline parameters needed to be considered in order to ensure stable dynamic models.
-% \end{rawidea}
-
-% \begin{rawidea}
-% While it was not a requirement that the combinations simulated were legal within prescriptive legislation, the legislation was used as a guide to generate reasonable vehicle design parameters to avoid instability in the model
-% \end{rawidea}
-
-The study of the relative effect of the \glspl{vdp} of \glspl{hcv} was split into three parts:
+A high-level overview of the study performed on the relative effect of the \glspl{vdp} of \glspl{hcv} is as follows:
 
 \begin{enumerate}
-	\item Develop a set of three baseline combinations that represent a range of highly productive heavy vehicles. Previous \gls{pbs} assessments conducted by \gls{wits} and the \gls{csir} were used.
-	\item Define reasonable ranges for each \gls{vdp} by considering \gls{oem} variations, legal restrictions, physical constraints, and data from \gls{pbs} assessments previously conducted by Wits.
-	\item Evaluate the relative effect of altering each \gls{vdp} on overall vehicle performance within the \gls{pbs} framework as detailed explained in Section~\ref{section:interpretation-of-the-results-matrix}.
+\item  Develop a set of baseline combinations to represent a range of highly productive \glspl{hcv}.
+\item Define reasonable ranges for each pertinent\gls{vdp} to be varied within.
+\item Evaluate the relative effect of altering each \gls{vdp} within its selected range on overall vehicle performance within the \gls{pbs} framework.
 \end{enumerate}
 
-\trucksim{} was used as the multi-body vehicle dynamics simulation package to simulate the \gls{pbs} manoeuvres. The simulation results were used to determine the safety of each \gls{hcv} within the \gls{pbs} framework using a post processor developed in \matlab{} at \gls{wits}. Software versions and descriptions are included in Section~\ref{section:software}.
+%==============================================
+%      SECTION
+%==============================================
+\section{Baseline Combinations\label{section:methodbaselinecombinations}}
+Three baseline \gls{hcv} configurations were developed based on South African workhorse vehicles and Australia's most common PBS vehicle.  Previous \gls{pbs} assessments conducted by \gls{wits} and the \gls{csir} were used to develop the design of each of the baseline combinations.
 
-A \matlab{} script automated the adjustment of each individual or combination of parameters within a \trucksim{} model according to the work flow illustrated in Figure~\ref{figure:matlab-trucksim-api-interaction} allowing for the simulation of a large set of vehicle configurations.
+The same high-level prime mover was used for each baseline, with adjustments to the wheelbase where necessary. A set of representative suspensions were developed and used for all combinations to avoid inserting any bias from discrepancies between the baseline suspension designs. Sections \ref{section:baseline-quad-semi} to \ref{section:baseline-rigid-drawbar-combination} detail the development of each baseline vehicle configuration.
 
-The simulation models and method were validated using results published by the \gls{ntc} as presented in Section~\ref{section:validation-method}.
+%==============================================
+%      SECTION
+%==============================================
+\section{\gls{vdp} ranges\label{section:methodvdpranges}}
+To define reasonable upper and lower limits for each pertinent \gls{vdp}, \gls{oem} variations, legal restrictions, physical constraints, global studies, and data from \gls{pbs} assessments previously conducted by Wits were consolidated and consulted. Details on how the range for each pertinent \gls{vdp} was chosen are contained in Section~\ref{chapter:parameter-range-selection}.
+
+The geometrical limits of a \gls{hcv} are largely governed by the prescriptive legislation of the country in which the combination will be operating.The South African legislation was chosen for developing the geometrical limits to provide value to the \gls{pbs} pilot project in South African. This would not limit the results to being applicable only in South Africa, but if used internationally, the local legislation should be consulted to determine where results may differ.
+
+Inertial, suspension and tyre properties are not widely available which is one of the factors that drive the need for this research. \gls{oem} variations, data from PBS assessments conducted by Wits and Global studies were consulted and the information was consolidated to develop ranges for each of the pertinent \glspl{vdp} that would represent the global \gls{hcv} fleet as local legislation does not dictate any restrictions on the origins of \gls{hcv} components.
+
+%==============================================
+%      SECTION
+%==============================================
+\section{Evaluating \gls{vdp} Relative Influence}
+
+To evaluate the relative influence of each \gls{vdp} on each of the baseline combinations, the \glspl{vdp} were varied in isolation while keeping all other \glspl{vdp} constant at their baseline value. To evaluate the influence of each \gls{vdp}, the \gls{vdp} was varied by 5 evenly distributed points from its maximum to minimum value within its range as determined in Section~\ref{chapter:parameter-range-selection}. This resulted in a total of 8345 simulations being run in \trucksim{} as illustrated in \ref{figure:number-of-simulations-overview}.
 
 %----------------------------------------------
 %      FIGURE
 %----------------------------------------------
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{fig/2018-03-23_trucksim-com-server-flowchart}
+	\includegraphics[width=1\textwidth]{fig/Number-of-simulations-Infographic}
+	\caption{Overview of the number of \gls{hcv} simulations performed}
+	\label{figure:number-of-simulations-overview}
+\end{figure}
+%----------------------------------------------
+%      FIGURE
+%----------------------------------------------
+
+\trucksim{} was used as the multi-body vehicle dynamics simulation package to simulate the \gls{hcv} performing a set of \gls{pbs} manoeuvres. The simulation results were used to determine the safety of each \gls{hcv} within the \gls{pbs} framework using a post processor developed in \matlab{} at \gls{wits}. A \matlab{} script automated the adjustment of each individual or combination of parameters within a \trucksim{} model according to the work flow illustrated in Figure~\ref{figure:matlab-trucksim-api-interaction} allowing for the simulation of a large set of vehicle configurations. The versions of each software packaged used are included in Section~\ref{section:software}.
+
+The simulation software and models were validated using results published by the \gls{ntc} as detailed in Section~\ref{section:validation-method}.
+
+%----------------------------------------------
+%      FIGURE
+%----------------------------------------------
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{fig/2018-03-23_trucksim-com-server-flowchart}
 	\caption{\matlab{} interaction with the \trucksim{} 2018 API using a COM server}
 	\label{figure:matlab-trucksim-api-interaction}
 \end{figure}

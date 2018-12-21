@@ -2,32 +2,45 @@
 
 To quantify the influence of each \gls{vdp} on the performance of a baseline combination for a particular PBS performance measure, the coefficient of variation (\gls{cv}) metric was used. The \gls{cv} facilitates the comparison of datasets where the units of measurement may differ \cite{Soong2004} and is a measure of the spread of data about its mean.
 
-Each \gls{vdp} was systematically varied in isolation with 5 data points ranging from the minimum to the maximum value as per the ranges developed in Section~\ref{chapter:parameter-range-selection}. For each \gls{vdp}, the \gls{cv} of each PBS performance measure was calculated as per Equation~\ref{equation:cv}.
-
-To compare the relative influence of each \gls{vdp} on a \gls{pbs} performance measure, the \gls{cv} for each PBS performance measure was normalised with respect to the parameter with the highest \gls{cv}, denoted as $CV_n$ as per Equation \ref{equation:cv-norm}. Any parameter that produced a $CV_n$ of less than 10\% (i.e. a \gls{cv} less than 10\% of the maximum coefficient of variation for the same performance measure) for a performance measure was regarded as having a negligible relative influence and was omitted from the overall \gls{cv} matrices in Section~\ref{sec:results-overall}. A set of complete \gls{cv} matrices containing all evaluated \glspl{vdp} are included in Sections~\ref{section:complete-cv-quad-semi}~to~\ref{section:complete-cv-rigid-drawbar}. Additional matrices comparing the relative influence of the inertial, geometrical, suspension and tyre \glspl{vdp} in isolation can be found in Appendices~\ref{section:cv-geometrical}~to~\ref{section:cv-tyre}.
+Each \gls{vdp} was systematically varied in isolation with 5 equally distributed data points ranging from the minimum to the maximum value as per the ranges developed in Section~\ref{chapter:parameter-range-selection}. For each \gls{vdp}, the \gls{cv} of each PBS performance measure was calculated as per Equation~\ref{equation:cv}.
 
 %----------------------------------------------
 %      EQUATION
-
-\begin{align}
+%----------------------------------------------
+\begin{equation}
     \label{equation:cv}
-    &CV = \frac{\sigma}{\mu} \times 100\%\\
-    \label{equation:cv-norm}
-    &CV_{n} = \frac{CV}{CV_{max}} \times 100\%
-\end{align}
-
-Where:
-
-$\sigma$ = standard deviation for a single performance measure evaluated for a single \gls{vdp}
-
-$\mu$ = mean performance for a single performance measure evaluated for a single \gls{vdp}
-
-$CV$ = coefficient of variation for a single performance measure evaluated for a single \gls{vdp}
-
-$CV_n$ = normalised coefficient of variation for a single performance measure evaluated for a single \gls{vdp}
-
+    CV = \frac{\sigma}{\mu} \times 100\%
+\end{equation}
+%----------------------------------------------
 %      EQUATION
 %----------------------------------------------
+
+To compare the relative influence of each \gls{vdp} on each \gls{pbs} performance measure, the \gls{cv} for each \gls{pbs} performance measure was normalised with respect to the parameter with the highest \gls{cv} ($CV_{max}$). Thus the \gls{cv} matrix columns are normalised according to $CV_{max}$ for that column and the normalised values are denoted as $CV_n$ as per Equation \ref{equation:cv-norm}.
+
+%----------------------------------------------
+%      EQUATION
+%----------------------------------------------
+\begin{equation}
+    \label{equation:cv-norm}
+    CV_{n} = \frac{CV}{CV_{max}} \times 100\%
+\end{equation}
+%----------------------------------------------
+%      EQUATION
+%----------------------------------------------
+
+%----------------------------------------------
+%      EQUATION
+Where:
+\begin{itemize}[label={}]
+\item $\sigma$ = standard deviation for a single performance measure evaluated for a single \gls{vdp}
+\item $\mu$ = mean performance for a single performance measure evaluated for a single \gls{vdp}
+\item $CV$ = coefficient of variation for a single performance measure evaluated for a single \gls{vdp}
+\item $CV_n$ = normalised coefficient of variation for a single performance measure evaluated for a single \gls{vdp}
+\end{itemize}
+%      EQUATION
+%----------------------------------------------
+
+Any parameter that produced a $CV_n$ of less than 10\% (i.e. a \gls{cv} less than 10\% of the maximum coefficient of variation for the same performance measure) for a performance measure was regarded as having a negligible relative influence and was omitted from the overall \gls{cv} matrices in Section~\ref{sec:results-overall}. A set of complete \gls{cv} matrices containing all evaluated \glspl{vdp} are included in Sections~\ref{section:complete-cv-quad-semi}~to~\ref{section:complete-cv-rigid-drawbar}. Additional matrices comparing the relative influence of the inertial, geometrical, suspension and tyre \glspl{vdp} in isolation can be found in Appendices~\ref{section:cv-geometrical}~to~\ref{section:cv-tyre}.
 
 \section{Interpretation of the CV Matrix}\label{section:interpretation-of-the-results-matrix}
 
@@ -107,11 +120,11 @@ VDP Parameter 											     & \gls{vdp} without a relative influence above 10\
 \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{VDP Parameter}} & \textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{\gls{vdp} with a relative influence $\geq$ 50\% for at least 1 performance measure}}\\
 \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{VDP Parameter}} & \textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{\gls{vdp} with a relative influence equal to 100\% for at least 1 performance measure}}\\
 \midrule
-5											       & \multicolumn{1}{l}{$0 \geq CV < 10$: \gls{vdp} has a negligible relative influence on the performance measure}\\
-\textbf{15}										   & \multicolumn{1}{l}{\textbf{\textbf{$10 \geq CV < 25$: \gls{vdp} has a low relative influence on the performance measure}}}\\
-\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}}  & \multicolumn{1}{l}{\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{$25 \geq CV < 50$: \gls{vdp} has a medium relative influence on the performance measure}}}\\
-\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{65}}  & \multicolumn{1}{l}{\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{$50 \geq CV < 100$: \gls{vdp} has a high relative influence on the performance measure}}}\\
-\textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \multicolumn{1}{l}{\textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{$CV = 100$: \gls{vdp} has the maximum relative influence on the performance measure}}}\\
+5											       & \multicolumn{1}{l}{$0 \geq CV_n < 10$: \gls{vdp} has a negligible relative influence on the performance measure}\\
+\textbf{15}										   & \multicolumn{1}{l}{\textbf{\textbf{$10 \geq CV_n < 25$: \gls{vdp} has a low relative influence on the performance measure}}}\\
+\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{35}}  & \multicolumn{1}{l}{\textcolor[rgb]{0.000, 0.620, 0.451}{\textbf{$25 \geq CV_n < 50$: \gls{vdp} has a medium relative influence on the performance measure}}}\\
+\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{65}}  & \multicolumn{1}{l}{\textcolor[rgb]{0.000, 0.447, 0.698}{\textbf{$50 \geq CV_n < 100$: \gls{vdp} has a high relative influence on the performance measure}}}\\
+\textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{100}} & \multicolumn{1}{l}{\textcolor[rgb]{0.835, 0.369, 0.000}{\textbf{$CV_n = 100 (CV_{max})$: \gls{vdp} has the maximum relative influence on the performance measure}}}\\
 \bottomrule
 \end{tabulary}
 

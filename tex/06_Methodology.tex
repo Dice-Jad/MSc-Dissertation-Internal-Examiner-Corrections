@@ -1,9 +1,9 @@
 \chapter{Methodology}\label{chapter:methodology}
 A high-level overview of the study performed on the relative effect of the \glspl{vdp} of \glspl{hcv} is as follows:
 
-\begin{enumerate}
-\item  Develop a set of baseline combinations to represent a range of highly productive \glspl{hcv}.
-\item Define reasonable ranges for each pertinent\gls{vdp} to be varied within.
+\begin{enumerate}\addtolength{\itemsep}{0.5\baselineskip}
+\item Develop a set of baseline combinations to represent a range of highly productive \glspl{hcv}.
+\item Define reasonable ranges for each pertinent \gls{vdp} to be varied within.
 \item Evaluate the relative effect of altering each \gls{vdp} within its selected range on overall vehicle performance within the \gls{pbs} framework.
 \end{enumerate}
 
@@ -47,7 +47,7 @@ To evaluate the relative influence of each \gls{vdp} on each of the baseline com
 
 \trucksim{} was used as the multi-body vehicle dynamics simulation package to simulate the \gls{hcv} performing a set of \gls{pbs} manoeuvres. The simulation results were used to determine the safety of each \gls{hcv} within the \gls{pbs} framework using a post processor developed in \matlab{} at \gls{wits}. A \matlab{} script automated the adjustment of each individual or combination of parameters within a \trucksim{} model according to the work flow illustrated in Figure~\ref{figure:matlab-trucksim-api-interaction} allowing for the simulation of a large set of vehicle configurations. The versions of each software packaged used are included in Section~\ref{section:software}.
 
-The simulation software and models were validated using results published by the \gls{ntc} as detailed in Section~\ref{section:validation-method}.
+The simulation software and models were calibrated using results published by the \gls{ntc} as detailed in Section~\ref{section:validation-method}.
 
 %----------------------------------------------
 %      FIGURE
@@ -77,9 +77,84 @@ The following software packages were used to perform the vehicle simulations:
 %==============================================
 %      SECTION
 %==============================================
-\section{Validation Method}\label{section:validation-method}
+\section{Software Calibration}\label{section:validation-method}
 
-The \gls{ntc} requested consultants to compare three computer-based modelling packages (ADAMS, AUTOSIM and \glspl{umtri} Yaw/Roll) to evaluate (in isolation of each other) the \gls{pbs} performance of a B-double and truck-trailer heavy vehicle combination \cite{Prem2001} (known as an interlink and rigid drawbar combination in South Africa).
+To perform real world testing to validate the software used to evaluate the \gls{pbs} performance of \glspl{hcv}, experts in the industry were consulted to determine the costs that would be involved. 
+
+In the cost analysis, KDG logistics was consulted to get a quotation of the cost to hire a 6 car car-carrier with a driver and Gerotek was contacted to get a quotation for the use of their test track and tilt-table facilities. An estimated minimum time required to perform the physical testing is included in Table~\ref{table:est-min-time-physical-pbs-testing} (taking into account safety precautions, fitting and testing of sensors that would be used to acquire the data required for validation) and the projected costs of physical testing of a single \gls{hcv} is summarised in Table~\ref{table:est-cost-physical-pbs-testing}. 
+
+The author would like to thank KDG Logistics and Gerotek for their time and efforts involved in providing the quotations.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{cc}
+			\toprule
+\textbf{Manoeuvre}                     & \textbf{Estimated Time Required to Test} \\
+			\midrule
+Low-speed turn                         & 4 hours                          \\
+High-speed lane-change                 & 4 hours                          \\
+High-speed tracking on a straight path & 4 hours                          \\
+Pulse-steer test                       & 4 hours                          \\
+Tilt-table                             & 8 hours                          \\
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Estimation of the minimum time required to perform physical PBS testing}
+		\label{table:est-min-time-physical-pbs-testing}
+
+		%\begin{tablenotes}
+		%\item[1] %\tnote{1}
+		%\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+Additional funding of R 145 704.00 was not available for validating the software used with the physical testing of a \gls{hcv}. \trucksim{} indicates that their software has been validated and correclated to extensive real-world results as measured and observed by a multitude of well-known automotive \glspl{oem} such as Izuzu, Ford and Toyota along with many others \cite{MechanicalSimulation2018}. Thus, considering the objective of this study is to determine the relative influence of pertinent \glspl{vdp} used as input parameters in multi-body vehicle dynamics simulation software, it was deemed suitable to omit real-world testing and validation and instead perform a calibration of the software according to a framework provided for \gls{pbs} assessors to ensure their simulations are providing accurate results of vehicle safety performance.
+
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+\begin{table}[H]
+	\centering\footnotesize
+	\begin{threeparttable}
+
+		\begin{tabulary}{\textwidth}{lccc}
+			\toprule
+\textbf{Item}          & \textbf{Cost}     & \textbf{Duration}   & \textbf{Total Cost}  \\
+			\midrule
+
+KDG Truck (incl. driver) & R 24 000 per day  & 3 days\tnote{1}    & R72 000.00  \\
+Payload Cars           & R 1 800 per day\tnote{1}   & 3 days     & R5 400.00   \\
+Gerotek Straight track & R 3 019 per hour  & 16 hours & R48 304.00  \\
+Tilt-table test        & R 20 000 per test & One test   & R20 000.00  \\
+                       &                   & Total      & R145 704.00 \\
+			\bottomrule
+		\end{tabulary}
+
+		\caption{Estimation of the minimum time required to perform physical PBS testing}
+		\label{table:est-cost-physical-pbs-testing}
+
+		\begin{tablenotes}
+		\item[1] Assuming 8 hours per day
+		\item[2] Assuming 6 rental vehicles at R 300 each (excluding special insurances)
+		\item[3] Assuming the tilt-table test can be completed in a single day
+		\end{tablenotes}
+
+	\end{threeparttable}
+\end{table}
+%----------------------------------------------
+%      TABLE
+%----------------------------------------------
+
+The \gls{ntc} framework was developed by requesting consultants to compare three computer-based modelling packages (ADAMS, AUTOSIM and \glspl{umtri} Yaw/Roll) to evaluate (in isolation of each other) the \gls{pbs} performance of a B-double and truck-trailer heavy vehicle combination \cite{Prem2001} (known as an interlink and rigid drawbar combination in South Africa).
 
 The \gls{ntc} prescribed a set of inputs for a representative B-double and truck-trailer combination used by all consultants. The vehicles were simulated to perform identical pulse steer, step steer, standard SAE lane change and a low-speed 90\degree{} turn manoeuvres.
 
@@ -87,7 +162,7 @@ The B-double was found to have excellent agreement between all three of the mode
 
 The Yaw/Roll simulation results were provided by the \gls{ntc} for service providers to calibrate their computer-modelling software and techniques. This data was used to validate the models.
 
-\subsection{Validation Results}\label{section:validation-results}
+\subsection{Software Calibration Results}\label{section:validation-results}
 
 The behaviour of the B-double and truck-trailer simulated in \trucksim{} 2018 was found to have good correlation with the behaviour simulated in \glspl{umtri} yaw/roll program. Similarly to the outcome of the \gls{ntc} validation, the truck-trailer combination compared less favourably than the B-double combination due to it being a less stable configuration.
 

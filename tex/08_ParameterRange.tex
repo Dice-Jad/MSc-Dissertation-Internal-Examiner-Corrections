@@ -634,8 +634,6 @@ The baseline vehicles operate at or near the legal axle load limits and as a res
 
 The minimum sprung mass was determined by consolidating data from South African \gls{pbs} assessments (see Appendix~\ref{appendix:anonymised-pbs-data}). The ratio of the sprung mass to the wheelbase was found for each trailer and prime mover as per Equation~\ref{equation:sprung-mass-to-wheelbase-ratio}. The minimum sprung mass to wheelbase ratio was then multiplied with the baseline wheelbase to determine the minimum sprung mass of each vehicle unit as per Equation~\ref{equation:min-sprung-wheelbase}.
 
-It was deemed more appropriate to use the sprung mass to axle spacing ratio (see Equations~\ref{equation:sprung-mass-to-axle-spacing} to \ref{equation:min-sprung-axle-spacing}) to determine the minimum sprung mass for the dolly vehicle unit.
-
 %----------------------------------------------
 %      EQUATION
 %----------------------------------------------
@@ -643,7 +641,15 @@ It was deemed more appropriate to use the sprung mass to axle spacing ratio (see
 		\label{equation:sprung-mass-to-wheelbase-ratio}
 		&\gls{rsw} = \frac{\gls{msprung}}{\gls{dwb}}\\
 		\label{equation:min-sprung-wheelbase}
-		&m_{sprung,min} = \gls{rsw} \times d_{wb-baseline}\\
+		&m_{sprung,min} = \gls{rsw} \times d_{wb-baseline}
+\end{align}
+
+It was deemed more appropriate to use the sprung mass to axle spacing ratio (see Equations~\ref{equation:sprung-mass-to-axle-spacing} to \ref{equation:min-sprung-axle-spacing}) to determine the minimum sprung mass for the dolly vehicle unit.
+
+%----------------------------------------------
+%      EQUATION
+%----------------------------------------------
+\begin{align}
 		\label{equation:sprung-mass-to-axle-spacing}
 		&\gls{rsa} = \frac{\gls{msprung}}{\gls{daxle}}\\
 		\label{equation:min-sprung-axle-spacing}
